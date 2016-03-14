@@ -1,0 +1,6 @@
+*. install docker below ubuntu 14.04 
+    sudo apt-get install docker.io
+  
+* usging behind proxy
+    export "HTTPS_PROXY=https://xxxx"
+    export "HTTP_PROXY=http://xxxx"
