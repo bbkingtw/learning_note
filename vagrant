@@ -19,3 +19,13 @@ config.vm.network "forwarded_port", guest: 80, host: 8081
 
 config.vm.synced_folder "src/", "/a/b", owner: "root", group: "root"
     d:\vagrant\src link vm's /a/b
+
+vagrant is projet oriented
+    each project has its own Vagrantfile
+    
+vagrant package
+    pack all the running VM into package.box
+    and other people can use vagrant box add this box for use
+    
+vagrant halt
+    shutdown the machine
