@@ -1,0 +1,21 @@
+vagrant init <boxname>
+    
+sample
+======
+    vagrant box add precise64 http://files.vagrantup.com/precise64.box
+    mkdir my_box
+    cd my_box
+    vagrant init precise64
+    vagrant up
+
+vagrant reload          
+    restarts vagrant machine, loads new Vagrantfile configuration
+vagrant init [box_name]
+    initializes a new Vagrant environment by creating a Vagrantfile [with box_name]
+    
+config.vm.network "forwarded_port", guest: 80, host: 8081    
+    guest 是本機
+    host 是VM
+
+config.vm.synced_folder "src/", "/a/b", owner: "root", group: "root"
+    d:\vagrant\src link vm's /a/b
