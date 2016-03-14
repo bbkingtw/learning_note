@@ -4,3 +4,16 @@
 * usging behind proxy
     export "HTTPS_PROXY=https://xxxx"
     export "HTTP_PROXY=http://xxxx"
+
+* save running instance image and load it on another host
+    docker ps -a                                    // check all running instance
+    docker commit 3a09b2588478 mynewimage           // and commit one running ID to be a image 
+    docker save mynewimage > /tmp/mynewimage.tar    // save it to a file
+    copy files                                      // transfer file thru cdrom or what ever you want
+    docker load < /tmp/mynewimage.tar               // load this image to another dockered machine
+
+* good url for reference
+    http://www.codedata.com.tw/social-coding/docker-layman-abc/
+    
+* commands
+    docker images
