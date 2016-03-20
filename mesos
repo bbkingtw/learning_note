@@ -1,2 +1,5 @@
-nginx & mesos-dns
+scaling out nginx with mesos-dns
     https://mesosphere.github.io/mesos-dns/docs/tutorial-systemd.html
+    
+mesosphere tutorial 
+    https://open.mesosphere.com/getting-started/install/
