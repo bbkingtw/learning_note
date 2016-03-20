@@ -3,3 +3,6 @@ scaling out nginx with mesos-dns
     
 mesosphere tutorial 
     https://open.mesosphere.com/getting-started/install/
+
+TOWARDS DOCKER IN PRODUCTION WITH APACHE MESOS
+    http://www.ivoverberk.nl/towards-docker-in-production-with-apache-mesos/
