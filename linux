@@ -1,0 +1,2 @@
+ * delete file older than 100 days 
+    find * -mtime +100 -type f -delete
