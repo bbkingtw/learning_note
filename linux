@@ -1,2 +1,6 @@
- * delete file older than 100 days 
+* delete file older than 100 days 
     find * -mtime +100 -type f -delete
+    
+* install nodejs new version    
+    curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+    sudo apt-get install -y nodejs
