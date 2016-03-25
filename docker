@@ -4,6 +4,7 @@
 * usging behind proxy
     export "HTTPS_PROXY=https://xxxx"
     export "HTTP_PROXY=http://xxxx"
+    * http://stackoverflow.com/questions/23111631/cannot-download-docker-images-behind-a-proxy
 
 * save running instance image and load it on another host
     docker ps -a                                    // check all running instance
