@@ -1,5 +1,14 @@
 *. install docker below ubuntu 14.04 
     sudo apt-get install docker.io
+
+* commands
+    docker images                           -- list images
+    docker commit [option] container        -- generate a new image
+    docker port image-name port             -- check the port of host
+    docker run -dit --name alias_name image_name 
+    docker ps                               -- list all running container
+    docker search python                    -- search docker image in public repository
+    docker run -dit --name 
   
 * usging behind proxy
     export "HTTPS_PROXY=https://xxxx"
@@ -16,5 +25,6 @@
 * good url for reference
     http://www.codedata.com.tw/social-coding/docker-layman-abc/
     
-* commands
-    docker images
+* test if the image is ok
+    docker run -i -t ubuntu echo Hello world!
+    
