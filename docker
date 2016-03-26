@@ -28,3 +28,10 @@
 * test if the image is ok
     docker run -i -t ubuntu echo Hello world!
     
+* run a image named nodejs 1111 from image google/nodejs and initial run at /bin/bash    
+    docker run -p 0.0.0.0:11111:2222 -it --rm --name nodejs1111 google/nodejs /bin/bash    
+    --rm mean if you exit, this container gone disappear
+    --11111:2222 means you can use 11111 which is shared from container's 2222 port
+    --i interactive
+    --t attach
+    
