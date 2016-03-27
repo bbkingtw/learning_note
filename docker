@@ -1,14 +1,24 @@
 *. install docker below ubuntu 14.04 
     sudo apt-get install docker.io
 
-* commands
-    docker images                           -- list images
-    docker commit [option] container        -- generate a new image
-    docker port image-name port             -- check the port of host
+* commands (cname==>container_name)
+    docker search                                   --search images in public repository
+    docker images                                   --list images
+    docker commit [option] container                --generate a new image
+    docker port image-name port                     --check the port of host
     docker run -dit --name alias_name image_name 
-    docker ps                               -- list all running container
-    docker search python                    -- search docker image in public repository
+    docker ps                                       --list all running container
+    docker search python                            --search docker image in public repository
     docker run -dit --name 
+    docker stop container_name
+    docker restart container_name
+    docker rm -f container_name                     --remove a container ==> -f mean force
+    docker rm $(docker ps -a -q)                    --remove all container
+    docker logs container_name
+    docker inspect container_name           
+    docker attach cname                             --attach to a running container
+    docker cp cname:/the_file_in_container host_dir --copy a container file to host 
+    docker commit cname image_name                  --docker commit nodejs1111 new_image_name
   
 * usging behind proxy
     export "HTTPS_PROXY=https://xxxx"
@@ -29,9 +39,17 @@
     docker run -i -t ubuntu echo Hello world!
     
 * run a image named nodejs 1111 from image google/nodejs and initial run at /bin/bash    
-    docker run -p 0.0.0.0:11111:2222 -it --rm --name nodejs1111 google/nodejs /bin/bash    
+    docker run -v /code:/code2 -p 0.0.0.0:11111:2222 -it --rm --name nodejs1111 google/nodejs /bin/bash    
+    -p 11111:2222                               link host port 11111 to container's 2222 port
+    -i interactive
+    -t attach
+    -v host_folder:/container_folder            mount host path to container's path
+    -v host_folder:/container_folder:ro         :ro mean read only :rw mean read/write
+    -d make container run in the background
+    -e setup environment variable
     --rm mean if you exit, this container gone disappear
-    --11111:2222 means you can use 11111 which is shared from container's 2222 port
-    --i interactive
-    --t attach
-    
+    --link=[] establish connection with other container (container name use alias name)
+    --restart options
+        no: default do not restart even container dead
+        on-failure: only restart on failure happen on-failure:3 ==> retry 3 times 
+        always: always restart if container is dead
