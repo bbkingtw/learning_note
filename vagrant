@@ -29,3 +29,19 @@ vagrant package
     
 vagrant halt
     shutdown the machine
+
+vagrant box add name：添加box
+vagrant box list：列出當前所有的box
+vagrant box remove name：列出某個box(名字就是自己給取的，比如上面的base)
+vagrant box repackage name：對某個box重新封包
+vagrant init [name]：初始化目前的目錄為工作目錄
+vagrant up [name]：啟動虛擬機器
+vagrant destroy [name]：刪除虛擬機器
+vagrant suspend [name]：暫停某個box
+vagrant reload [name]：重新載入
+vagrant resume [name]：恢復虛擬機器
+vagrant halt [name]：關閉虛擬機器
+vagrant ssh：連接虛擬機器
+vagrant package –output name：如果對虛擬機器的配置進行修改過後，如果想把當前環境打包，可使用這個命令
+vagrant status：查看虛擬機器狀態
+vagrant ssh-config
