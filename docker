@@ -9,7 +9,7 @@
     docker run -dit --name alias_name image_name 
     docker ps                                       --list all running container
     docker search python                            --search docker image in public repository
-    docker run -dit --name 
+    docker run -dit --name cname image_name         -- run a image_name with cname in the background
     docker stop container_name
     docker restart container_name
     docker rm -f container_name                     --remove a container ==> -f mean force
@@ -19,6 +19,20 @@
     docker attach cname                             --attach to a running container
     docker cp cname:/the_file_in_container host_dir --copy a container file to host 
     docker commit cname image_name                  --docker commit nodejs1111 new_image_name
+    docker rmi image_name
+    
+    docker save -o output.tar image_name            --save a image to be a file for later load usage 
+        this could help docker load image from file without process behind proxy
+    docker load -i the_tar_name_for_loading 
+    
+    docker events                                   --start tailing the docker operation history
+    docker build                                    --build a image from a description file
+    
+    docker run -P or docker run--publish-all        --publish all port
+    
+* how to attach and execute /bin/bash at container which already running other command
+    docker exec -it cname bash      --execute bash at container(cname) with -i interactive ability and -t attach immediately
+    
   
 * usging behind proxy
     export "HTTPS_PROXY=https://xxxx"
