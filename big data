@@ -3,5 +3,19 @@ http://aptuz.com/blog/is-apache-spark-going-to-replace-hadoop/
 http://pingax.com/install-apache-hadoop-ubuntu-cluster-setup/
 DPark is a Python clone of Spark, MapReduce(R) alike computing framework supporting iterative computation
 
-how to install hadoop
+install hadoop
     http://www.slideshare.net/aweieee/hadoop-48126886
+    http://chenpipi.blog.51cto.com/8563610/1640255
+    http://www.jerrynest.com/install-hadoop-2-6-0-on-ubuntu14-04/
+    
+install hbase
+    http://glj8989332.blogspot.tw/2015/10/hadoop-hbase-112.html
+    
+install apache spark
+    http://blog.prabeeshk.com/blog/2014/10/31/install-apache-spark-on-ubuntu-14-dot-04/
+    https://www.youtube.com/watch?v=L5QWO8QBG5c&nohtml5=False
+    https://www.quora.com/How-can-I-run-Spark-without-HDFS
+    
+install mesos    
+    https://www.digitalocean.com/community/tutorials/how-to-configure-a-production-ready-mesosphere-cluster-on-ubuntu-14-04
+    http://mesos.apache.org/documentation/latest/frameworks/
