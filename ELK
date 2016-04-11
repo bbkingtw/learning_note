@@ -1,2 +1,8 @@
 limit search size for 1 reocrd to raw.ip=10.70.*
     http://websb/ESDB/nginx_f14__2016.01.27/_search?q=ip:10.70*&size=1
+
+elk
+    https://wiki.scc.kit.edu/gridkaschool/index.php/Elastic_Search,_Logstash_and_Kibana
+    
+dump oracle    
+    https://github.com/jprante/elasticsearch-jdbc
