@@ -1,2 +1,87 @@
 install newest nginx under ubuntu 14.04
     https://gist.github.com/Globegitter/685e3739c0f181bda3ec#file-nginx-latest-sh-L32
+======================================================================
+# Automatically instal the latest nginx
+wget -O - http://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+
+#Make a backup copy of your current sources.list file
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+
+#Now copy the following repositories to the end of ` /etc/apt/sources.list`
+echo "deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
+echo "deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
+
+#If you want to use the 'stable' branch take:
+#echo "deb http://nginx.org/packages/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
+#echo "deb-src http://nginx.org/packages/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
+
+#update to get the new repository
+sudo apt-get update
+sudo apt-get install nginx
+
+## Longer way ##
+## Manually build and install the latest nginx ##
+
+#Install the PCRE library needed by nginx
+sudo apt-get install libpcre3 libpcre3-dev
+
+#Replace by the latest version number found on http://nginx.org/
+wget http://nginx.org/download/nginx-1.7.4.tar.gz
+
+tar -xvf nginx-1.7.4.tar.gz
+
+cd nginx-1.7.4
+
+#These flags make sure to put nginx somewhere that is usuall in PATH and to activate the https module
+./configure --sbin-path=/usr/local/sbin --with-http_ssl_module
+
+make
+
+sudo make install
+
+# Download nginx startup script
+wget -O init-deb.sh http://library.linode.com/assets/660-init-deb.sh
+
+# Move the script to the init.d directory & make executable
+sudo mv init-deb.sh /etc/init.d/nginx
+sudo chmod +x /etc/init.d/nginx
+
+# Add nginx to the system startup
+sudo /usr/sbin/update-rc.d -f nginx defaults
+
+# This automatically adds the nginx.conf from below into /etc/init/nginx.conf
+# If something doesn't work, just copy it manually
+sudo wget -O /etc/init/nginx.conf https://gist.githubusercontent.com/Globegitter/685e3739c0f181bda3ec/raw/6ec0def52ed49d29b2f00cae70d28689371d0230/nginx.conf
+
+#This will make sure you get the following commands
+#sudo service nginx start
+#sudo service nginx stop
+#sudo service nginx restart
+#sudo service nginx status
+
+##Now you can modify your nginx.conf in /usr/local/nginx/conf    
+
+nginx.conf
+=======================================================
+description "nginx http daemon"
+author "Philipp Klose <me@'thisdomain'.de>"
+
+start on (filesystem and net-device-up IFACE=lo)
+stop on runlevel [!2345]
+
+env DAEMON=/usr/local/sbin/nginx
+env PID=/usr/local/nginx/logs/nginx.pid
+
+expect fork
+respawn
+respawn limit 10 5
+#oom never
+
+pre-start script
+ $DAEMON -t
+ if [ $? -ne 0 ]
+ then exit $?
+ fi
+end script
+
+exec $DAEMON
