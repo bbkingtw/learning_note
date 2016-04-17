@@ -24,3 +24,7 @@ install apache spark
 install mesos    
     https://www.digitalocean.com/community/tutorials/how-to-configure-a-production-ready-mesosphere-cluster-on-ubuntu-14-04
     http://mesos.apache.org/documentation/latest/frameworks/
+
+programming
+    nodejs
+        https://www.npmjs.com/package/timothy
