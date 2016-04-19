@@ -6,3 +6,6 @@ elk
     
 dump oracle    
     https://github.com/jprante/elasticsearch-jdbc
+
+use case
+    https://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/
