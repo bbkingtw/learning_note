@@ -3,6 +3,9 @@ http://aptuz.com/blog/is-apache-spark-going-to-replace-hadoop/
 http://pingax.com/install-apache-hadoop-ubuntu-cluster-setup/
 DPark is a Python clone of Spark, MapReduce(R) alike computing framework supporting iterative computation
 
+apache drill
+    https://drill.apache.org/docs/installing-drill-on-windows/
+
 install hadoop
     http://www.slideshare.net/aweieee/hadoop-48126886
     http://chenpipi.blog.51cto.com/8563610/1640255
