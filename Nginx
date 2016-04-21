@@ -1,8 +1,10 @@
 install newest nginx under ubuntu 14.04
     https://gist.github.com/Globegitter/685e3739c0f181bda3ec#file-nginx-latest-sh-L32
     
-fine tune performance
+config.conf
     http://www.codestance.com/tutorials-archive/nginx-tuning-for-best-performance-255
+    http://www.jianshu.com/p/5e71f7159a85
+    
 ======================================================================
 # Automatically instal the latest nginx
 wget -O - http://nginx.org/keys/nginx_signing.key | sudo apt-key add -
