@@ -17,3 +17,4 @@ zabbix
         for linux
             method1: http://www.2daygeek.com/add-remote-linux-host-on-zabbix-server-to-monitor/#
             method2: http://www.tecmint.com/install-and-configure-zabbix-agents-on-centos-redhat-and-debian/ 
+            method3: https://thedutchlab.com/blog/installing-zabbix-on-ubuntu-1404
