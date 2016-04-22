@@ -15,4 +15,5 @@ zabbix
 ======
     install
         for linux
-            http://www.2daygeek.com/add-remote-linux-host-on-zabbix-server-to-monitor/#
+            method1: http://www.2daygeek.com/add-remote-linux-host-on-zabbix-server-to-monitor/#
+            method2: http://www.tecmint.com/install-and-configure-zabbix-agents-on-centos-redhat-and-debian/ 
