@@ -10,3 +10,9 @@ grafana
 
     integrate with elasticsearch
         https://blog.raintank.io/how-to-effectively-use-the-elasticsearch-data-source-and-solutions-to-common-pitfalls/
+    
+zabbix
+======
+    install
+        for linux
+            http://www.2daygeek.com/add-remote-linux-host-on-zabbix-server-to-monitor/#
