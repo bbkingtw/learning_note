@@ -7,3 +7,6 @@ grafana
     
     start the grafana
         sudo service grafana-server start
+
+    integrate with elasticsearch
+        https://blog.raintank.io/how-to-effectively-use-the-elasticsearch-data-source-and-solutions-to-common-pitfalls/
