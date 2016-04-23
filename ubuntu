@@ -1,0 +1,3 @@
+sudo su                         --switch to root when operator belong admin group
+ctrl-R                          --find history with specific token
+aptitude                        --new apt
