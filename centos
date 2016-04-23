@@ -1,0 +1,21 @@
+SGID privilege (let group can modify each others' files)
+    chmod 2770 /home/group_dir
+    
+stop non-service port's service
+    /etc/init.d/service-name stop
+    chkconfig service-name off
+    
+update system (sometimes will be kernel update==>must reboot)
+    yum -y update
+    
+facl setup
+    SELinux
+    
+Good URL
+    http://www.study-area.org
+    http://linux.vbird.org
+    
+IP vs MAC
+    when server want to know who own specific IP, it will broadcast ARP, and the ip owner would response a MAC address for the source end to keep for future use in next 20 minutes
+    
+    
