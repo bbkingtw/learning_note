@@ -5,6 +5,8 @@ config.conf
     http://www.codestance.com/tutorials-archive/nginx-tuning-for-best-performance-255
     http://www.jianshu.com/p/5e71f7159a85
     
+watch performance    
+    http://www.cyberciti.biz/faq/nginx-see-active-connections-connections-per-seconds/    
 ======================================================================
 # Automatically instal the latest nginx
 wget -O - http://nginx.org/keys/nginx_signing.key | sudo apt-key add -
