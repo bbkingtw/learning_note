@@ -68,3 +68,16 @@ SELinux
     checking acl status
         ls -Z 
     
+re-gnerate ssh keys
+    rm /etc/ssh/ssh_host*           delete all keys
+    /etc/init.d/sshd restart        regenerate ssh keys
+    ~/.ssh/authorized_keys          share to another remote host
+    
+ssh public key storage
+    ~/.ssh/known_hosts
+    
+new nslookup
+    dig
+
+    
+    
