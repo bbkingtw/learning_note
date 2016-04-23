@@ -17,5 +17,54 @@ Good URL
     
 IP vs MAC
     when server want to know who own specific IP, it will broadcast ARP, and the ip owner would response a MAC address for the source end to keep for future use in next 20 minutes
+    arp -n query caching IP vs MAC relation
     
+port vs services
+    /etc/services
+    
+check route status
+    route -n 
+    
+check fully route to dest ip
+    traceroute ip
+    
+get ip of tw.yahoo.com    
+    host tw.yahoo.com
+    
+command line ftp for bash use, no more interactive    
+    lftp
+    
+a better lync        
+    links
+    
+use nc to setup a shell remote running
+    nc -l localhost 2000 &
+    nc remote 2000
+    
+firewall
+    ipfilter 
+    iptables
+    /etc/hosts.allow 
+    /etc/hosts.deny
+    SELinux (security enhanced Linux)
+    /var/log/messages
+    /var/log/secure
+    
+yum
+    yum search token
+    yum list
+    yum install software
+
+list listening service    
+    nestat -tunl
+    
+list connected network
+    netstat -tun
+    
+list servicing port for each server
+    nmap 192.168.1.0/24
+    
+SELinux
+    checking acl status
+        ls -Z 
     
