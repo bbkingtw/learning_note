@@ -16,7 +16,11 @@ log analysis
     url
         https://easyengine.io/tutorials/nginx/log-parsing/
         https://support.hypernode.com/knowledgebase/finding-the-top-10-visitors-by-parsing-the-nginx-access-logs/
-    
+
+knowledge
+    http://www.coctec.com/docs/service/show-post-2004.html
+    http://www.coctec.com/docs/service/show-post-19926.html
+    http://www.coctec.com/docs/service/show-post-28.html
     
 watch performance    
     http://www.cyberciti.biz/faq/nginx-see-active-connections-connections-per-seconds/    
