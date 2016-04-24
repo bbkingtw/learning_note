@@ -4,3 +4,6 @@
 * install nodejs new version    
     curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
     sudo apt-get install -y nodejs
+
+*faq
+    http://www.coctec.com/docs/linux/show-post-57649.html
