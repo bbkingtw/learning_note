@@ -9,6 +9,14 @@ config.conf
 DDos protection
     config: http://takeshiyako.blogspot.tw/2015/11/mitigating-ddos-attacks-nginx-module.html
     tool: fail2ban
+
+log analysis
+    utility
+        goAccess
+    url
+        https://easyengine.io/tutorials/nginx/log-parsing/
+        https://support.hypernode.com/knowledgebase/finding-the-top-10-visitors-by-parsing-the-nginx-access-logs/
+    
     
 watch performance    
     http://www.cyberciti.biz/faq/nginx-see-active-connections-connections-per-seconds/    
