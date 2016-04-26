@@ -9,3 +9,8 @@ dump oracle
 
 use case
     https://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/
+
+secure
+    http://www.minvolai.com/blog/2014/08/Setting-up-a-Secure-Single-Node-Elasticsearch-server-behind-Nginx/Setting-up-a-Secure-Single-Node-Elasticsearch-server-behind-Nginx/
+    https://www.elastic.co/blog/playing-http-tricks-nginx
+    http://blog.eagerelk.com/securing-elasticsearch-using-nginx-as-a-proxy/
