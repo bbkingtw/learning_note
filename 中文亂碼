@@ -1,0 +1,23 @@
+km
+    http://sean1223.blogspot.tw/2013/06/asciiansiunicodeutf-8.html
+    
+ubuntu
+    http://www.arthurtoday.com/2015/02/how-to-make-ubuntu-terminal-speak-your-language.html
+    default utf8
+    
+javascript
+    default unicode
+    
+nodejs
+    http://ju.outofmemory.cn/entry/22664
+    
+沒特別說明，Unicode 在微軟視窗系統下就是指 UTF-16 Little Endian。
+Unicode (UTF-8) 就是 UTF-8，會特別指明。
+
+UTF-16 可和 UCS-2 大致視為相同。
+UTF-16 就是 2 bytes，UTF-8 是 1 byte ~ 4 bytes。可變動字節 (位元組)。
+UTF-8 編碼的中文，很多都是落在 3 bytes，所以才有人說資料庫轉換後，空間會比 Big5 多出一半。
+    
+和網頁有關的，需要利用網頁應用的資料，像是 html/xml/txt，用 UTF-8 就對了。
+不需要交流的，或是應用程式，用 UTF-16，或是非 Unicode 編碼，都不反對。
+需要 Tag 的，例如多媒體檔案 mp3/mkv/ape/... 這些，用 UTF-8。    
