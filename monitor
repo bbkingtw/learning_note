@@ -27,3 +27,6 @@ zabbix
             sudo vi /etc/zabbix/zabbix_agentd.conf
                 Server=192.168.1.137
             sudo service zabbix-agent restart
+        
+        monitor URL
+            http://itnihao.blog.51cto.com/1741976/1129725
