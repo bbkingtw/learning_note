@@ -15,3 +15,6 @@ jquery-lightgrid (json<==>gui for interactive data)
 
 d3.js
     https://www.dashingd3js.com/lessons
+
+x-editable
+    http://vitalets.github.io/x-editable/demo.html
