@@ -1,20 +1,28 @@
-move.js
-    move position with easy script
-    
-animate.css
-    only css to have special effect
-    
-zepto.js
-    jquery compatible library
-    
-bootmetro
-    win8 style
+charting
+    resource
+        https://news.ycombinator.com/item?id=7948560
+    d3.js
+        https://www.dashingd3js.com/lessons
 
-jquery-lightgrid (json<==>gui for interactive data)
-    http://www.jqueryrain.com/?gKL6r87D
+layout
+    move.js
+        move position with easy script
+    bootmetro
+        win8 style
 
-d3.js
-    https://www.dashingd3js.com/lessons
+human interactive     
+    x-editable
+        http://vitalets.github.io/x-editable/demo.html
+    jquery-lightgrid (json<==>gui for interactive data)
+        http://www.jqueryrain.com/?gKL6r87D
 
-x-editable
-    http://vitalets.github.io/x-editable/demo.html
+interface
+    animate.css
+        only css to have special effect
+    zepto.js
+        jquery compatible library
+    
+
+
+    
+
