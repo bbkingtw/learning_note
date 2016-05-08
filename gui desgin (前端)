@@ -1,8 +1,15 @@
 charting
     resource
         https://news.ycombinator.com/item?id=7948560
+    use case
+        diagram processing
+            http://jsfiddle.net/fusioncharts/4B6M4/
+    fusionchart
+        http://www.fusioncharts.com/javascript-chart-fiddles/
     d3.js
         https://www.dashingd3js.com/lessons
+    c3.js (easier d3)
+        http://c3js.org/examples.html
 
 layout
     move.js
