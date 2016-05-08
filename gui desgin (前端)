@@ -1,6 +1,7 @@
 charting
     resource
         https://news.ycombinator.com/item?id=7948560
+        http://www.hksilicon.com/articles/401924
     use case
         diagram processing
             http://jsfiddle.net/fusioncharts/4B6M4/
