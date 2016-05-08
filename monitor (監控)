@@ -1,7 +1,8 @@
 tools
 =======
-    netdata: 
-        linux 專用 monitor
+    netdata: linux 專用 monitor
+        https://github.com/firehol/netdata/wiki/Why-netdata%3F
+        
     caravel: airbnb interactive dc like for exploring data
         https://github.com/airbnb/caravel
         
