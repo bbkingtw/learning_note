@@ -12,3 +12,7 @@ work with visual studio
 
 node-red
     http://noderedguide.com/index.php/2015/10/28/node-red-lecture-3-basic-nodes-and-flows/
+
+node-gyp
+    win8 need vs2010
+    win7 need express msvc2010 + win7 sdk 64bit 
