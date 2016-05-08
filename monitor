@@ -1,3 +1,10 @@
+tools
+=======
+    netdata: 
+        linux 專用 monitor
+    caravel: airbnb interactive dc like for exploring data
+        https://github.com/airbnb/caravel
+        
 grafana
 =======
     installation
