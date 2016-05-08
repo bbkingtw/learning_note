@@ -16,6 +16,9 @@ log analysis
     url
         https://easyengine.io/tutorials/nginx/log-parsing/
         https://support.hypernode.com/knowledgebase/finding-the-top-10-visitors-by-parsing-the-nginx-access-logs/
+        
+ngx_lua        
+    http://blog.csdn.net/chosen0ne/article/details/7304192
 
 knowledge
     http://www.coctec.com/docs/service/show-post-2004.html
