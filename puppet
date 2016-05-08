@@ -1,2 +1,5 @@
 resource
     http://www.example42.com/tutorials/PuppetTutorial/#slide-9
+
+step by step
+    http://www.slideshare.net/jeyg/getting-started-with-puppet-14581014
