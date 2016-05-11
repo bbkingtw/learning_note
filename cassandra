@@ -1,5 +1,14 @@
 installation
     https://www.digitalocean.com/community/tutorials/how-to-install-cassandra-and-run-a-single-node-cluster-on-ubuntu-14-04
+    http://www.tutorialspoint.com/cassandra/cassandra_installation.htm
     
-dbms
+rdbms (sql and use case)
     http://www.slideshare.net/michellebanzondarling/cassandratutorialfinalversion
+    https://cassandra.apache.org/doc/cql/CQL.html
+    http://www.slideshare.net/jericevans/cassandra-by-example-data-modelling-with-cql3
+    http://www.slideshare.net/jaykumarpatel/cassandra-data-modeling-best-practices
+ 
+an overview    
+    http://www.slideshare.net/DataStax/an-overview-of-apache-cassandra
+
+    
