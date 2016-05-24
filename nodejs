@@ -16,3 +16,11 @@ node-red
 node-gyp
     win8 need vs2010
     win7 need express msvc2010 + win7 sdk 64bit 
+
+gridfs (storage)
+    https://www.npmjs.com/package/gridfs-storage-engine
+    https://www.npmjs.com/package/fi-gridfs
+    http://thecodebarbarian.com/mongodb-gridfs-stream
+    
+form builder
+    https://www.npmjs.com/package/formio
