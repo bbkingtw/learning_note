@@ -1,2 +1,3 @@
 notify
     https://github.com/seb-m/pyinotify
+    http://brunorocha.org/python/watching-a-directory-for-file-changes-with-python.html
