@@ -24,3 +24,6 @@ gridfs (storage)
     
 form builder
     https://www.npmjs.com/package/formio
+    
+console format
+    https://www.npmjs.com/package/console-stamp
