@@ -29,7 +29,14 @@ interface
         only css to have special effect
     zepto.js
         jquery compatible library
-    
+    drop down select a string with image display
+        https://github.com/Zmoki/react-ui-dropdown
+    react-select    a good drop down selector for string
+        http://jedwatson.github.io/react-select/
+    react-pivot     excel like pivot layouter which allow online excel exporter
+        http://davidguttman.github.io/react-pivot/
+    json viewer
+        https://react.rocks/example/react_json_viewer
 
 
     
