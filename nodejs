@@ -31,6 +31,10 @@ console format
 good npm
     https://www.quora.com/What-are-some-of-the-most-useful-Node-js-packages
     validator (string comparing, validator isJson, isDate, isDecimal
+    setup private (sinopia)
+        https://www.npmjs.com/package/sinopia
+        https://blog.dylants.com/2014/05/10/creating-a-private-npm-registry-with-sinopia/
+    
     
 loading before web complete
     http://smallenvelop.com/display-loading-icon-page-loads-completely/
