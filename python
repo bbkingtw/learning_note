@@ -1,3 +1,8 @@
 notify
     https://github.com/seb-m/pyinotify
     http://brunorocha.org/python/watching-a-directory-for-file-changes-with-python.html
+
+install juypter
+    http://www.techinfected.net/2016/05/install-and-run-juypter-ipython-notebook-ubuntu-linux.html
+    http://jupyter.org/
+    https://ipython.org/
