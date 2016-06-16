@@ -14,10 +14,12 @@ install hadoop
     http://www.powerxing.com/install-hadoop/
     http://www.jianshu.com/p/a90b330586ca (*)
     https://slanla.com/blog/article/dt8q48
+    https://www.big-data-europe.eu/scalable-sparkhdfs-workbench-using-docker/
     
 install hbase
     http://glj8989332.blogspot.tw/2015/10/hadoop-hbase-112.html
-    
+
+
 install apache spark
     http://blog.prabeeshk.com/blog/2014/10/31/install-apache-spark-on-ubuntu-14-dot-04/
     https://www.youtube.com/watch?v=L5QWO8QBG5c&nohtml5=False
