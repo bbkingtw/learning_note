@@ -5,7 +5,9 @@ tools
         
     caravel: airbnb interactive dc like for exploring data
         https://github.com/airbnb/caravel
-        
+
+    monit
+        https://mmonit.com/monit/        
 grafana
 =======
     installation
