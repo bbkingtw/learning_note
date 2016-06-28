@@ -7,7 +7,12 @@ tools
         https://github.com/airbnb/caravel
 
     monit
-        https://mmonit.com/monit/        
+        https://mmonit.com/monit/   
+        https://mmonit.com/monit/documentation/monit.html
+        
+    monitorix
+        http://portable.easylife.tw/2846
+        
 grafana
 =======
     installation
