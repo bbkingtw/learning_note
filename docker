@@ -4,6 +4,7 @@ asp.net
     http://www.hanselman.com/blog/PublishingAnASPNET5AppToDockerOnLinuxWithVisualStudio.aspx
     https://docs.asp.net/en/1.0.0-rc1/getting-started/installing-on-linux.html
     https://study4.gitbooks.io/azure/content/VM/Ubuntu/ASP.NET%20MVC%20In%20Docker/ASP.NET%20MVC%20In%20Docker.html
+    http://www.slideshare.net/imac-cloud/docker-61970852
     
 *. install docker below ubuntu 14.04 
     sudo apt-get install docker.io
