@@ -12,6 +12,7 @@ nodejs
     https://docs.docker.com/v1.10/engine/examples/nodejs_web_app/
     https://nodesource.com/blog/dockerizing-your-nodejs-applications/
     https://www.airpair.com/node.js/posts/getting-started-with-docker-for-the-nodejs-dev
+    http://dockone.io/article/944
     
 *. install docker below ubuntu 14.04 
     sudo apt-get install docker.io
