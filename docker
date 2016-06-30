@@ -5,6 +5,13 @@ asp.net
     https://docs.asp.net/en/1.0.0-rc1/getting-started/installing-on-linux.html
     https://study4.gitbooks.io/azure/content/VM/Ubuntu/ASP.NET%20MVC%20In%20Docker/ASP.NET%20MVC%20In%20Docker.html
     http://www.slideshare.net/imac-cloud/docker-61970852
+    http://dockone.io/article/1445
+    
+nodejs    
+    https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+    https://docs.docker.com/v1.10/engine/examples/nodejs_web_app/
+    https://nodesource.com/blog/dockerizing-your-nodejs-applications/
+    https://www.airpair.com/node.js/posts/getting-started-with-docker-for-the-nodejs-dev
     
 *. install docker below ubuntu 14.04 
     sudo apt-get install docker.io
