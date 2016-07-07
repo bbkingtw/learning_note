@@ -22,6 +22,9 @@ node-red
     charting 
         http://embeddedexperience.blogspot.tw/2016/02/rapid-dashboarding-with-node-red.html
 
+node-schedule
+    cronjob for function execution
+    
 node-gyp
     win8 need vs2010
     win7 need express msvc2010 + win7 sdk 64bit 
