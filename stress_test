@@ -1,7 +1,11 @@
-thrughtput
-ab
-loadrunner
-jmeter
+test tools    
+    thrughtput
+    ab
+    loadrunner
+    jmeter
+    
+how to test
+    http://terraltech.com/how-to-test-your-websites-performance/
 
 httpperf
     https://ihower.tw/blog/archives/1749
