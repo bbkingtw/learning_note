@@ -1,0 +1,2 @@
+service auto detect
+    http://www.oschina.net/news/74278/nginx-stream-upsync-module
