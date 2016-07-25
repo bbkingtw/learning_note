@@ -1,2 +1,8 @@
 service auto detect
     http://www.oschina.net/news/74278/nginx-stream-upsync-module
+
+基於 swarm + consul + nginx 達到 HA 和 dynamic scaling 的架構
+    http://genchilu-blog.logdown.com/posts/317095-based-on-swarm-and-consul-ha-and-dynamically-extensible-architectures
+    
+swarm + interlock + nginx + redis 達到保有 session 的 HA 及 dynamic scaling 架構    
+    http://genchilu-blog.logdown.com/posts/509176
