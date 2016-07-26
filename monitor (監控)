@@ -13,6 +13,10 @@ tools
     monitorix
         http://portable.easylife.tw/2846
         
+opentsdb
+========
+    http://opentsdb.net/docs/build/html/resources.html
+    
 grafana
 =======
     installation
