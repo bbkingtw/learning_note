@@ -1,3 +1,6 @@
+docker image
+    docker run -d -p 4242:4242 petergrace/opentsdb-docke
+
 km
     http://www.ttlsa.com/opentsdb/opentsdb-insert-data-http-api-interfac
     http://opentsdb.net/docs/build/html/user_guide/query/index.html
