@@ -12,6 +12,11 @@ tools
         
     monitorix
         http://portable.easylife.tw/2846
+
+anormaly detection
+==================
+    twitter method in R
+        https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series
         
 opentsdb
 ========
