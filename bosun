@@ -1,3 +1,4 @@
-docke
+docker
     https://bosun.org/quickstart
-    https://hub.docker.com/r/stackexchange/bosun/
+    https://hub.docker.com/r/stackexchange/bosun
+    https://blog.codeship.com/monitoring-with-bosun/
