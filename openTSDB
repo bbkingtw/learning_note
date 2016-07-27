@@ -1,5 +1,6 @@
 km
-    http://www.ttlsa.com/opentsdb/opentsdb-insert-data-http-api-interface
+    http://www.ttlsa.com/opentsdb/opentsdb-insert-data-http-api-interfac
+    http://opentsdb.net/docs/build/html/user_guide/query/index.html
     
 append value
     curl -i -X POST -d '{"metric":"proc.loadavg.15m", "timestamp":1413015492, "value":8, "tags":{"host":"10.0.101.145"}}' http://10.0.101.145:4242/api/p
@@ -7,4 +8,25 @@ append value
         gzip.json
 
 query value
-    http://localhost:4242/api/suggest?type=metrics
+    http://localhost:4242/api/suggest?type=metric
+    
+===================================================
+[
+    {
+        "metric": "mysql.innodb.row_lock_time",
+        "timestamp": 1435716527,
+        "value": 1234,
+        "tags": {
+           "host": "web01",
+           "dc": "beijing"
+        }
+    },
+    {
+        "metric": "mysql.innodb.row_lock_time",
+        "timestamp": 1435716529,
+        "value": 2345,
+        "tags": {
+           "host": "web01",
+           "dc": "beijing"
+        }
+    },
