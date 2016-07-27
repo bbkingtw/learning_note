@@ -1,12 +1,19 @@
+bosu & openTSDB
+    Make a local directory to save your hbase, scollector and bosun state via mkdir -p ~/bosun ~/hbase
+    execute my opentsdb container via
+        docker run -v ~/hbase:/data/hbase --name=opentsdb -d -p 16010:16010 -p 4242:4242 petergrace/opentsdb-docker:latest
+    execute my bosun container via
+        docker run -v ~/bosun:/opt/bosun/data -d -p 8070:8070 --link opentsdb:tsdb petergrace/bosun-docker:lates
+
 docker image
-    docker run -d -p 4242:4242 petergrace/opentsdb-docke
+    docker run -d -p 4242:4242 petergrace/opentsdb-docker
 
 km
-    http://www.ttlsa.com/opentsdb/opentsdb-insert-data-http-api-interfac
+    http://www.ttlsa.com/opentsdb/opentsdb-insert-data-http-api-interface
     http://opentsdb.net/docs/build/html/user_guide/query/index.html
     
 append value
-    curl -i -X POST -d '{"metric":"proc.loadavg.15m", "timestamp":1413015492, "value":8, "tags":{"host":"10.0.101.145"}}' http://10.0.101.145:4242/api/p
+    curl -i -X POST -d '{"metric":"proc.loadavg.15m", "timestamp":1413015492, "value":8, "tags":{"host":"10.0.101.145"}}' http://10.0.101.145:4242/api/put
     curl -X POST --data-binary "@gzip.json" --header "Content-Type: application/json" --header "Content-Encoding: gzip" http://mycloud:xxxx/api/put?details
         gzip.json
 
