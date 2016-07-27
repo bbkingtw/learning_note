@@ -1,0 +1,10 @@
+km
+    http://www.ttlsa.com/opentsdb/opentsdb-insert-data-http-api-interface
+    
+append value
+    curl -i -X POST -d '{"metric":"proc.loadavg.15m", "timestamp":1413015492, "value":8, "tags":{"host":"10.0.101.145"}}' http://10.0.101.145:4242/api/p
+    curl -X POST --data-binary "@gzip.json" --header "Content-Type: application/json" --header "Content-Encoding: gzip" http://mycloud:xxxx/api/put?details
+        gzip.json
+
+query value
+    http://localhost:4242/api/suggest?type=metrics
