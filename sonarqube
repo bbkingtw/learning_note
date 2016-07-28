@@ -3,3 +3,6 @@ docker
     
 plsql
     https://github.com/felipebz/sonar-plsql
+    https://www.salvis.com/blog/plsql-cop-for-sonarqube/
+    http://docs.sonarqube.org/pages/viewpage.action?pageId=6389850
+    http://www.sonarsource.com/products/plugins/languages/plsql/
