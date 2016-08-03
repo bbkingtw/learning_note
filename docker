@@ -14,6 +14,7 @@ asp.net
     http://dockone.io/article/1445
     
 nodejs    
+    http://anandmanisankar.com/posts/docker-container-nginx-node-redis-example/
     https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
     https://docs.docker.com/v1.10/engine/examples/nodejs_web_app/
     https://nodesource.com/blog/dockerizing-your-nodejs-applications/
