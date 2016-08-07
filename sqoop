@@ -7,8 +7,9 @@ data i/o oracle vs hdfs
     http://sqoop.apache.org/docs/1.4.2/SqoopUserGuide.html#_literal_sqoop_import_all_tables_litera
     https://dzone.com/articles/sqoop-oracle-example-getting
     scrip
-        http://www.tanzirmusabbir.com/2013/02/sqoop-importexport-fromto-oracle.ht
-
+        http://www.tanzirmusabbir.com/2013/02/sqoop-importexport-fromto-oracle.htm
+test [http://www.pchome.com.tw] (http://google.com)
+    
 import
     progres
         http://localhost:5007
