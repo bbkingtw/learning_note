@@ -7,5 +7,15 @@ data i/o oracle vs hdfs
     http://sqoop.apache.org/docs/1.4.2/SqoopUserGuide.html#_literal_sqoop_import_all_tables_litera
     https://dzone.com/articles/sqoop-oracle-example-getting
     scrip
-        http://www.tanzirmusabbir.com/2013/02/sqoop-importexport-fromto-oracle.htm
-        
+        http://www.tanzirmusabbir.com/2013/02/sqoop-importexport-fromto-oracle.ht
+
+import
+    progres
+        http://localhost:5007
+        http://localhost:8088/cluster/nodej
+    
+    problems
+        yarn-site.xml memory to samll (512-->2048
+    
+    scripts  
+        sqoop-import --target-dir /tmp/0807-1821 --query "select * from dba_tables where 1=1 and \$CONDITIONS" --connect $connect --username "system" --password "oracle" -m 1
