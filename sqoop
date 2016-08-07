@@ -4,3 +4,8 @@ using this as testing platform
     
 data i/o oracle vs hdfs
     http://www.toadworld.com/platforms/oracle/w/wiki/10891.transferring-bulk-data-between-oracle-database-and-hadoop-ecosystem-with-sqoop
+    http://sqoop.apache.org/docs/1.4.2/SqoopUserGuide.html#_literal_sqoop_import_all_tables_litera
+    https://dzone.com/articles/sqoop-oracle-example-getting
+    scrip
+        http://www.tanzirmusabbir.com/2013/02/sqoop-importexport-fromto-oracle.htm
+        
