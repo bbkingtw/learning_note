@@ -1,3 +1,6 @@
 using this as testing platform
     https://github.com/caioquirino/docker-cloudera-quickstar
-    http://www.cloudera.com/documentation/enterprise/latest/topics/introduction.html
+    http://www.cloudera.com/documentation/enterprise/latest/topics/introduction.ht
+    
+data i/o oracle vs hdfs
+    http://www.toadworld.com/platforms/oracle/w/wiki/10891.transferring-bulk-data-between-oracle-database-and-hadoop-ecosystem-with-sqoop
