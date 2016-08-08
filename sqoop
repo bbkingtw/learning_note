@@ -8,10 +8,12 @@ data i/o oracle vs hdfs
     https://dzone.com/articles/sqoop-oracle-example-getting
     scrip
         http://www.tanzirmusabbir.com/2013/02/sqoop-importexport-fromto-oracle.htm
-test [http://www.pchome.com.tw] (http://google.com)
+test [http://www.pchome.com.tw] (http://google.c撕
+http://www.tutorialspoint.com/sqoop/sqoop_installation.htm
+http://www.tutorialspoint.com/sqoop/sqoop_installation.htm
     
 import
-    progres
+    progre
         http://localhost:5007
         http://localhost:8088/cluster/nodej
     
@@ -19,4 +21,8 @@ import
         yarn-site.xml memory to samll (512-->2048
     
     scripts  
-        sqoop-import --target-dir /tmp/0807-1821 --query "select * from dba_tables where 1=1 and \$CONDITIONS" --connect $connect --username "system" --password "oracle" -m 1
+        sqoop-import --target-dir /tmp/0807-1821 --query "select * from dba_tables where 1=1 and \$CONDITIONS" --connect $connect --username "system" --password "oracle" -m 1 
+    
+    hue
+        http://www.cnblogs.com/smartloli/p/4527168.html
+        
