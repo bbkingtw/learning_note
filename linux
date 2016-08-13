@@ -9,7 +9,7 @@
     	    docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
    			http://localhost:9000
         shipyard
-            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock shipyard/deploy star
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock shipyard/deploy start
             http://localhot:8088 (admin/shipyard
             
 
