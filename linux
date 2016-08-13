@@ -4,10 +4,14 @@
         sudo groupadd docke
         sudo gpasswd -a ${USER} docke
         reboot the machine
-    docker web inerface
-    	docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
+    docker web inerfac
+        dockerui
+    	    docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock dockerui/dockerui
    			http://localhost:9000
-    
+        shipyard
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock shipyard/deploy star
+            http://localhot:8088 (admin/shipyard
+            
 
 * delete file older than 100 days 
     find * -mtime +100 -type f -delete
