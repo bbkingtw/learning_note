@@ -10,7 +10,9 @@
    			http://localhost:9000
         shipyard
             docker run --rm -v /var/run/docker.sock:/var/run/docker.sock shipyard/deploy start
-            http://localhot:8088 (admin/shipyard
+            http://localhot:8088 (admin/shipyard)
+        how to Docker Swarm.md
+            https://gist.github.com/alancnet/326ee262e5ddceec0f9d   (good)
             
 
 * delete file older than 100 days 
