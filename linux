@@ -1,5 +1,10 @@
-* utilit
-    term:hot key ctl-alt-t 
+* lesson
+    term:hot key ctl-alt-t
+    docker without sud
+        sudo groupadd docke
+        sudo gpasswd -a ${USER} docke
+        reboot the machin
+    
 
 * delete file older than 100 days 
     find * -mtime +100 -type f -delete
