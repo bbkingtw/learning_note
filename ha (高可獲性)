@@ -5,4 +5,7 @@ service auto detect
     http://genchilu-blog.logdown.com/posts/317095-based-on-swarm-and-consul-ha-and-dynamically-extensible-architectures
     
 swarm + interlock + nginx + redis 達到保有 session 的 HA 及 dynamic scaling 架構    
-    http://genchilu-blog.logdown.com/posts/509176
+    http://genchilu-blog.logdown.com/posts/50917
+    
+confd
+    https://www.digitalocean.com/community/tutorials/how-to-use-confd-and-etcd-to-dynamically-reconfigure-services-in-coreos
