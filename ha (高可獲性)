@@ -1,6 +1,7 @@
 service auto detect
     http://www.oschina.net/news/74278/nginx-stream-upsync-module
-
+    https://github.com/stianeikeland/node-etcd
+    
 基於 swarm + consul + nginx 達到 HA 和 dynamic scaling 的架構
     http://genchilu-blog.logdown.com/posts/317095-based-on-swarm-and-consul-ha-and-dynamically-extensible-architectures
     
