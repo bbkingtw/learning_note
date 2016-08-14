@@ -13,7 +13,8 @@
             http://localhot:8088 (admin/shipyard)
         how to Docker Swarm.md
             https://gist.github.com/alancnet/326ee262e5ddceec0f9d   (good)
-            
+    coreos with docker        
+        https://www.airpair.com/coreos/posts/coreos-with-docker
 
 * delete file older than 100 days 
     find * -mtime +100 -type f -delete
