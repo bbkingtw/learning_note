@@ -8,4 +8,5 @@ swarm + interlock + nginx + redis 達到保有 session 的 HA 及 dynamic scalin
     http://genchilu-blog.logdown.com/posts/50917
     
 confd
+    http://www.mricho.com/confd-and-docker-separating-config-and-code-for-containers/
     https://www.digitalocean.com/community/tutorials/how-to-use-confd-and-etcd-to-dynamically-reconfigure-services-in-coreos
