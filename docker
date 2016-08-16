@@ -1,4 +1,7 @@
-docker-compos
+conf/etcd
+    https://www.digitalocean.com/community/tutorials/how-to-use-confd-and-etcd-to-dynamically-reconfigure-services-in-coreos
+
+docker-compose
     installation
         http://mini-stable.blogspot.tw/2015/08/docker-compose.html
         
