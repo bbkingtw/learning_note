@@ -1,3 +1,6 @@
+docker images
+    https://hub.docker.com/_/cassandra
+
 installation
     https://www.digitalocean.com/community/tutorials/how-to-install-cassandra-and-run-a-single-node-cluster-on-ubuntu-14-04
     http://www.tutorialspoint.com/cassandra/cassandra_installation.htm
