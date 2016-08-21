@@ -2,7 +2,7 @@ dse docker
     https://github.com/joeljacobson/dse-docker
     
 best practic
-    http://www.datastax.com/wp-content/uploads/resources/DataStax-WP-Best_Practices_Running_DSE_Within_Docker.pd
+    http://www.datastax.com/wp-content/uploads/resources/DataStax-WP-Best_Practices_Running_DSE_Within_Docker.pdf
 
 docker images
     https://hub.docker.com/_/cassandra
