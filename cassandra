@@ -1,5 +1,6 @@
 dse docker
     https://github.com/joeljacobson/dse-docker
+    http://downloads.datastax.com/extra/docker_examples/
     
 best practic
     http://www.datastax.com/wp-content/uploads/resources/DataStax-WP-Best_Practices_Running_DSE_Within_Docker.pdf
