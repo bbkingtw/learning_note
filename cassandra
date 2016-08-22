@@ -1,3 +1,6 @@
+with pentaho
+    http://www.datastax.com/wp-content/uploads/2012/08/WP-DataStax-MySQLtoCassandra.pdf?1
+    
 dse docker
     https://github.com/joeljacobson/dse-docker
     http://downloads.datastax.com/extra/docker_examples/
