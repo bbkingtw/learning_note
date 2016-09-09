@@ -4,6 +4,8 @@ km
     http://nodeschool.io/zh-tw/
     http://www.kidozen.com/building-graphical-email-reports-using-casperjs/?utm_source=nodeweekly&utm_medium=email
     https://github.com/boo1ean/casual?utm_source=nodeweekly&utm_medium=email
+csv<==>json
+    https://github.com/mholt/PapaParse
     
 express3=>4
     http://webapplog.com/migrating-express-js-3-x-to-4-x-middleware-route-and-other-changes/?utm_source=nodeweekly&utm_medium=email
