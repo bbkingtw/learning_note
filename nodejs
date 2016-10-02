@@ -1,3 +1,6 @@
+framework
+    http://feathersjs.com/
+    
 dom
     https://github.com/npm-dom?utm_source=nodeweekly&utm_medium=email
 
