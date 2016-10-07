@@ -1,3 +1,15 @@
+session
+    https://github.com/dreyacosta/mongoose-store?utm_source=nodeweekly&utm_medium=email
+    
+screen
+    https://github.com/kolodny/screenliner?utm_source=nodeweekly&utm_medium=email
+
+debug
+    https://github.com/node-inspector/node-inspector?utm_source=nodeweekly&utm_medium=email
+    
+sublime
+    https://github.com/ganemone/NodeRequirer?utm_source=nodeweekly&utm_medium=email
+    
 nodejs awesome packages
     https://github.com/sindresorhus/awesome-nodejs?utm_source=nodeweekly&utm_medium=email
 
@@ -6,6 +18,7 @@ secure
     http://scottksmith.com/blog/2014/07/02/beer-locker-building-a-restful-api-with-node-oauth2-server/?utm_source=nodeweekly&utm_medium=email
     http://scottksmith.com/blog/2014/09/21/protect-your-node-apps-noggin-with-helmet/?utm_source=nodeweekly&utm_medium=email
     http://thejackalofjavascript.com/architecting-a-restful-node-js-app?utm_source=nodeweekly&utm_medium=email
+    https://blog.risingstack.com/node-js-security-tips/?utm_source=nodeweekly&utm_medium=email
     
 vector match library
     http://victorjs.org/?utm_source=nodeweekly&utm_medium=email
