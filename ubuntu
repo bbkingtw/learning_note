@@ -1,3 +1,7 @@
-sudo su                         --switch to root when operator belong admin group
-ctrl-R                          --find history with specific token
-aptitude                        --new apt
+change launchpad position
+    https://www.oschina.net/translate/things-to-do-after-installing-ubuntu-16-10?from=20161016
+    
+command  
+    sudo su                         --switch to root when operator belong admin group
+    ctrl-R                          --find history with specific token
+    aptitude                        --new apt
