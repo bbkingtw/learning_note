@@ -1,3 +1,20 @@
+neo4j vs orientdb
+    http://ylzhj02.iteye.com/blog/2194974
+    
+orientdb syntax
+    https://orientdb-cn.gitbooks.io/doc2-1-x/content/Tutorial-Working-with-graphs.html
+    
+orientdb nodejs
+    https://github.com/codemix/oriento
+    
+neo4j vs nodejs
+    simple
+        https://www.npmjs.com/package/neo4j
+    rest --> api 
+        https://www.npmjs.com/package/node-neo4j
+    request, and npm 
+        http://blog.modulus.io/learn-how-to-use-neo4j-with-node.js?utm_content=12954986&utm_medium=social&utm_source=twitter
+
 rest api with curl operation
     https://www.packtpub.com/mapt/book/Big+Data+and+Business+Intelligence/9781783287253/2/ch02lvl1sec25/Accessing+Neo4j+from+the+command+line+using+curl
     
