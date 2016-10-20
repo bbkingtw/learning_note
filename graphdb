@@ -3,6 +3,9 @@ cypher sql
 
 neo4j vs orientdb
     http://ylzhj02.iteye.com/blog/2194974
+
+orientdb rest
+    http://orientdb.com/docs/2.2/Import-from-CSV-to-a-Graph.html
     
 orientdb syntax
     https://orientdb-cn.gitbooks.io/doc2-1-x/content/Tutorial-Working-with-graphs.html
