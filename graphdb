@@ -1,4 +1,5 @@
-[test](http://www.stone.com.tw)
+rdf and neo4j
+    https://github.com/semr/neo4jena
 
 batch importing northwind to neo4j
     https://neo4j.com/developer/guide-importing-data-and-etl/  (periodic commit & match & merge then)
