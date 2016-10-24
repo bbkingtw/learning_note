@@ -1,3 +1,6 @@
+cmd entry
+    http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+    
 best practice
     http://docs.projectatomic.io/container-best-practices/
 
