@@ -1,3 +1,11 @@
+[test](http://www.stone.com.tw)
+
+batch importing northwind to neo4j
+    https://neo4j.com/developer/guide-importing-data-and-etl/  (periodic commit & match & merge then)
+    
+rest insert data to neo4j
+    http://jexp.de/blog/2013/05/on-importing-data-in-neo4j-blog-series/
+    
 neo4java
     https://markorodriguez.com/2011/02/23/knowledge-representation-and-reasoning-with-graph-databases/
     
@@ -9,7 +17,7 @@ orientdb syntax
     
 orientdb nodejs
     https://github.com/codemix/oriento
-    
+    https://github.com/orientechnologies/orientjs (官方)
     
 semantic with neo4j
     http://connected-data.london/2016/06/02/building-semantic-graph-neo4j/
