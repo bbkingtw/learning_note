@@ -1,1 +1,13 @@
-https://orientdb.gitbooks.io/orientdb-manual/content/orientdb.wiki/Tutorial-Working-with-graphs.html
+tutorial
+    https://orientdb.gitbooks.io/orientdb-manual/content/orientdb.wiki/Tutorial-Working-with-graphs.html
+
+orientdb rest
+    http://orientdb.com/docs/2.2/Import-from-CSV-to-a-Graph.html
+        
+orientdb syntax
+    https://orientdb-cn.gitbooks.io/doc2-1-x/content/Tutorial-Working-with-graphs.html
+    
+orientdb nodejs
+    https://github.com/codemix/oriento
+    https://github.com/orientechnologies/orientjs (官方)
+
