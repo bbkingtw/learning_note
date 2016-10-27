@@ -1,12 +1,21 @@
 neo4j loadcsv 
-    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp9 { EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID, DEPT_ID:e.DEPT_ID });
-    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e merge (n:emp9 { EMPLID:e.EMPLID})-[:listen_to]->(:emp9 {EMPLID:e.SUPERVISOR_ID});
+    MATCH(n:emp) DETACH DELETE n
+    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp { NAME:e.NAME, SEX:e.SEX, DEPTID:e.DEPTID, EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID});
+    CREATE INDEX ON :emp(EMPLID);
+    USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e match(n:emp {EMPLID:e.EMPLID}),(m:emp {EMPLID:e.SUPERVISOR_ID}) create (n)-[:listen_to]->(m);
     (巨量前面加這個) USING PERIODIC COMMIT row_count
+
+query
+    who is staff for xxxx
+        match(n:emp)<-[r]-(m) where n.EMPLID='xxxx' return n.EMPLID, COLLECT(DISTINCT m.EMPLID)
     
 nodejs
     https://www.npmjs.com/package/neo4j-driver
+    
+loading csv
+    https://dzone.com/articles/load-csv-neo4j-quickly-and
 
-cyphersql
+cyphersql    
     http://neo4j.com/docs/2.3.1/cypher-refcard/
     https://dzone.com/articles/neo4j-and-cypher-creating
     http://console.neo4j.org/
@@ -32,16 +41,7 @@ rest insert data to neo4j
 neo4java
     https://markorodriguez.com/2011/02/23/knowledge-representation-and-reasoning-with-graph-databases/
     
-orientdb rest
-    http://orientdb.com/docs/2.2/Import-from-CSV-to-a-Graph.html
-    
-orientdb syntax
-    https://orientdb-cn.gitbooks.io/doc2-1-x/content/Tutorial-Working-with-graphs.html
-    
-orientdb nodejs
-    https://github.com/codemix/oriento
-    https://github.com/orientechnologies/orientjs (官方)
-    
+   
 semantic with neo4j
     http://connected-data.london/2016/06/02/building-semantic-graph-neo4j/
     
@@ -54,15 +54,6 @@ cypher sql
 neo4j vs orientdb
     http://ylzhj02.iteye.com/blog/2194974
 
-orientdb rest
-    http://orientdb.com/docs/2.2/Import-from-CSV-to-a-Graph.html
-    
-orientdb syntax
-    https://orientdb-cn.gitbooks.io/doc2-1-x/content/Tutorial-Working-with-graphs.html
-    
-orientdb nodejs
-    https://github.com/codemix/oriento
-    
 neo4j vs nodejs
     simple
         https://www.npmjs.com/package/neo4j
