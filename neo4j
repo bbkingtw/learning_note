@@ -1,3 +1,16 @@
+neo4j loadcsv 
+    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp9 { EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID, DEPT_ID:e.DEPT_ID });
+    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e merge (n:emp9 { EMPLID:e.EMPLID})-[:listen_to]->(:emp9 {EMPLID:e.SUPERVISOR_ID});
+    (巨量前面加這個) USING PERIODIC COMMIT
+    
+nodejs
+    https://www.npmjs.com/package/neo4j-driver
+
+cyphersql
+    http://neo4j.com/docs/2.3.1/cypher-refcard/
+    https://dzone.com/articles/neo4j-and-cypher-creating
+    http://console.neo4j.org/
+
 ontology for daml
     http://www.daml.org/ontologies/
 
