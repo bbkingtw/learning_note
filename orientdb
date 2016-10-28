@@ -1,5 +1,30 @@
 tutorial
     https://orientdb.gitbooks.io/orientdb-manual/content/orientdb.wiki/Tutorial-Working-with-graphs.html
+    
+record id
+    syntax
+        #<cluster-id>:<cluster-position>
+    version
+        OrientDB uses an MVCC system. Every time you update a record, its version increments by one.
+    <cluster-id> The cluster identifier.
+        Each database can have a maximum of 32,767 clusters, or 215 - 1. 
+    <cluster-position> The position of the data within the cluster.    
+        Each cluster can handle up to 9,223,372,036,780,000 records, or 263, namely 9,223,372 trillion records.
+
+syntax
+    CREATE CLASS Person EXTENDS V
+    CREATE VERTEX Person SET name='Luca'
+    CREATE CLASS Eat EXTENDS E
+    CREATE EDGE Eat FROM ( SELECT FROM Person WHERE name='Luca' ) TO ( SELECT FROM Restaurant WHERE name='Dante' )
+    CREATE EDGE Eat FROM #11:1 TO #12:0
+    
+syntax    
+    針對EDGE的再說明
+    CREATE CLASS Person EXTENDS V
+    CREATE CLASS Car EXTENDS V
+    CREATE CLASS Owns EXTENDS E
+    CREATE PROPERTY Owns.out LINK Person
+    CREATE PROPERTY Owns.in LINK Car
 
 orientdb rest
     http://orientdb.com/docs/2.2/Import-from-CSV-to-a-Graph.html
