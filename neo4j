@@ -1,3 +1,48 @@
+delete dups relations
+    start r=relationship(*) 
+    match s-[r]->e 
+    with s,e,type(r) as typ, tail(collect(r)) as coll 
+    foreach(x in coll | delete x)
+
+delete dups nodes
+    MATCH (n:Person),(m:Person)
+    WHERE n <> m and n.id = m.id
+    DELETE m
+
+load all nodes and connections
+    LOAD CSV FROM "file:////Users/sagivo/dev/work/brewster/log/export_graph.csv" as line  
+    match (p:Person)
+    where p.id in tail(line)
+    match (f:Person {id: line[0]} )
+    create (f)-[:Connected]->(p)
+
+get top connected people
+    match (p:Person)-[r:Connected]->(Person)
+    return p, count(r)
+    order by count(r) desc
+    limit 20
+
+delete all nodes and connections
+    START n = node(*) 
+    OPTIONAL MATCH n-[r]-() 
+    DELETE n, r;
+
+db profile on searching (like oracle f5)
+    PROFILE
+    MATCH(n:emp)-[r]->(m)
+    RETURN distinct n.NAME;
+
+on create, on match (like store procedure...)
+    MERGE (keanu:Person { name:'Keanu Reeves' })
+    ON CREATE SET keanu.created = timestamp()
+    ON MATCH SET keanu.lastSeen = timestamp()
+    RETURN keanu.name, keanu.created, keanu.lastSeen
+
+procedure 
+    Procedures are written in Java and compiled into jar files. They can be deployed to the database by dropping a jar file 
+    into the $NEO4J_HOME/plugins directory on each standalone or clustered server. The database must be re-started on each 
+    server to pick up new procedures.
+
 neo4j loadcsv 
     MATCH(n:emp) DETACH DELETE n
     LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp { NAME:e.NAME, SEX:e.SEX, DEPTID:e.DEPTID, EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID});
@@ -16,7 +61,12 @@ loading csv
     https://dzone.com/articles/load-csv-neo4j-quickly-and
 
 cyphersql    
-    http://neo4j.com/docs/2.3.1/cypher-refcard/
+    cheatset
+        http://neo4j.com/docs/2.3.1/cypher-refcard/
+        http://neo4j.com/docs/pdf/neo4j-cypher-refcard-stable.pdf
+        best one
+            http://semanticommunity.info/@api/deki/files/25765/Neo4j_CheatSheet_v3.pdf
+        
     https://dzone.com/articles/neo4j-and-cypher-creating
     http://console.neo4j.org/
 
