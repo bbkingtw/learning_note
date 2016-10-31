@@ -1,3 +1,10 @@
+neo4j loadcsv 
+    MATCH(n:emp) DETACH DELETE n
+    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp { NAME:e.NAME, SEX:e.SEX, DEPTID:e.DEPTID, EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID});
+    CREATE INDEX ON :emp(EMPLID);
+    USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e match(n:emp {EMPLID:e.EMPLID}),(m:emp {EMPLID:e.SUPERVISOR_ID}) create (n)-[:listen_to]->(m);
+    (巨量前面加這個) USING PERIODIC COMMIT row_count
+
 delete dups relations
     start r=relationship(*) 
     match s-[r]->e 
@@ -42,13 +49,6 @@ procedure
     Procedures are written in Java and compiled into jar files. They can be deployed to the database by dropping a jar file 
     into the $NEO4J_HOME/plugins directory on each standalone or clustered server. The database must be re-started on each 
     server to pick up new procedures.
-
-neo4j loadcsv 
-    MATCH(n:emp) DETACH DELETE n
-    LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp { NAME:e.NAME, SEX:e.SEX, DEPTID:e.DEPTID, EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID});
-    CREATE INDEX ON :emp(EMPLID);
-    USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e match(n:emp {EMPLID:e.EMPLID}),(m:emp {EMPLID:e.SUPERVISOR_ID}) create (n)-[:listen_to]->(m);
-    (巨量前面加這個) USING PERIODIC COMMIT row_count
 
 query
     who is staff for xxxx
