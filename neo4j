@@ -1,3 +1,8 @@
+on trigger 
+    on match
+    on create
+    store procedure (reasoning) 
+    
 neo4j loadcsv 
     MATCH(n:emp) DETACH DELETE n
     LOAD CSV WITH HEADERS FROM "http://10.37.82.200:1483/csv" AS e create (n:emp { NAME:e.NAME, SEX:e.SEX, DEPTID:e.DEPTID, EMPLID:e.EMPLID, SUPERVISOR_ID:e.SUPERVISOR_ID});
