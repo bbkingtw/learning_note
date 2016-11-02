@@ -1,3 +1,7 @@
+loader
+    owl <===> graphdb
+    owl 3 version dl, lite, full
+    
 on trigger 
     on match
     on create
