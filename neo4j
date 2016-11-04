@@ -1,3 +1,6 @@
+other graphdb
+    http://stackoverflow.com/questions/31565386/what-in-memory-graph-db-if-modeling-data-is-focused
+    
 batch
     neo4j-js
         var batch = graph.createBatch();
