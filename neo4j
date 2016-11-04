@@ -1,3 +1,18 @@
+batch
+    neo4j-js
+        var batch = graph.createBatch();
+
+        //create a node and get another in the same request
+        graph.createNode(batch, { key: 'value' }, function (error, node) {
+            //this will not be called until after batch.run()
+        });
+        graph.getNode(batch, 18, function (error, node) {
+            //this will not be called until after batch.run()
+        });
+
+        batch.run();
+        
+        
 loader
     owl <===> graphdb
     owl 3 version dl, lite, full
