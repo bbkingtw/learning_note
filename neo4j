@@ -12,7 +12,9 @@ batch
 
         batch.run();
         
-        
+neo4j
+    https://github.com/neueda/awesome-neo4j#stored-procedures
+
 loader
     owl <===> graphdb
     owl 3 version dl, lite, full
