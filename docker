@@ -79,6 +79,9 @@ nodejs
         this could help docker load image from file without process behind proxy
     docker load -i the_tar_name_for_loading 
     
+    docker export containername>pack.tar
+    cat pack.tar | docker import - images_name      --after import, the image status is exactly the same for the last export
+    
     docker events                                   --start tailing the docker operation history
     docker build                                    --build a image from a description file
     
