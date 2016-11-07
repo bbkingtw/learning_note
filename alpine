@@ -1,5 +1,7 @@
-
 apk add -update xxx
 
 alpine oracle client nodejs
     https://gist.github.com/cristobal/726af571b0c4112ef907f769332184b1
+
+alpine proxy 
+    https://github.com/gliderlabs/docker-alpine/issues/191
