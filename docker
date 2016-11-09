@@ -1,3 +1,6 @@
+service discovery
+    https://technologyconversations.com/2015/09/08/service-discovery-zookeeper-vs-etcd-vs-consul/
+
 container orchestra
     https://www.oreilly.com/ideas/swarm-v-fleet-v-kubernetes-v-mesos   
     http://www.techrepublic.com/article/mesosphere-dcos-one-command-control-of-data-center-services/
