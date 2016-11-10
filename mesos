@@ -1,3 +1,9 @@
+a easy example marathon
+    http://dockone.io/article/682
+
+start mesos with docker 7 commands
+    https://medium.com/@gargar454/deploy-a-mesos-cluster-with-7-commands-using-docker-57951e020586#.64szn4xe2
+
 scaling out nginx with mesos-dns
     https://mesosphere.github.io/mesos-dns/docs/tutorial-systemd.html
     
