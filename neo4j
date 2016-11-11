@@ -1,5 +1,12 @@
+sparql plugin
+    http://www.snee.com/bobdc.blog/2014/01/storing-and-querying-rdf-in-ne.html
+
+import csv
+    https://neo4j.com/developer/guide-import-csv/
+    
 cypher
     https://zh-tw.coursera.org/learn/big-data-graph-analytics/lecture/e5XXC/hands-on-path-analytics-in-neo4j-using-cypher-part-1
+    https://dzone.com/refcardz/querying-graphs-neo4j
 
 other graphdb
     http://stackoverflow.com/questions/31565386/what-in-memory-graph-db-if-modeling-data-is-focused
