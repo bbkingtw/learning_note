@@ -1,3 +1,40 @@
+with spark
+    https://dzone.com/articles/neo4j-with-scala-awesome-experience-with-spark
+
+neo4j tips
+    https://dzone.com/articles/8-solid-tips-for-succeeding-with-neo4j
+    
+indexing
+    https://dzone.com/articles/full-text-indexing-fts-neo4j
+    
+user defined procedure
+    https://dzone.com/articles/neo4j-with-scala-user-defined-procedure-andnbspapo
+
+rdbms import （oracle)
+    https://dzone.com/articles/data-migration-from-other-database-to-neo4j
+
+bacth import
+    CSV files 
+        are delimited by ;, use | as the array delimiter and use ' for quotes.
+    null char remove (pre-process)
+        https://dzone.com/articles/neo4j-load-csv-sneaky-null
+    url
+        https://dzone.com/articles/import-10m-stack-overflow-questions-into-neo4j-in
+    samples
+        ../neo/bin/neo4j-import \
+        --into ../neo/data/graph.db \
+        --id-type string \
+        --nodes:Post csvs/posts.csv \
+        --nodes:User csvs/users.csv \
+        --nodes:Tag csvs/tags.csv \
+        --relationships:PARENT_OF csvs/posts_rel.csv \
+        --relationships:ANSWER csvs/posts_answers.csv \
+        --relationships:HAS_TAG csvs/tags_posts_rel.csv \
+        --relationships:POSTED csvs/users_posts_rel.csv
+
+performance tuning
+    https://dzone.com/articles/10-caveats-neo4j-users-should
+    
 sparql plugin
     http://www.snee.com/bobdc.blog/2014/01/storing-and-querying-rdf-in-ne.html
 
