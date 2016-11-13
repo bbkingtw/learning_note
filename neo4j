@@ -1,6 +1,13 @@
+use case
+    https://hub.docker.com/r/kbastani/neo4j-graph-analytics/
+    
 tinkerpop
     https://tinkerpop.apache.org/providers.html
 
+driver
+    .net   
+        https://dzone.com/articles/neo4j-30-with-a-net-driver-neo4jclient
+    
 plugin
     https://dzone.com/articles/extending-neo4j
     
@@ -44,6 +51,7 @@ bacth import
 
 performance tuning
     https://dzone.com/articles/10-caveats-neo4j-users-should
+    https://dzone.com/articles/neo4j-cluster-performance-tuning
     
 sparql plugin
     http://www.snee.com/bobdc.blog/2014/01/storing-and-querying-rdf-in-ne.html
@@ -79,10 +87,12 @@ loader
     owl <===> graphdb
     owl 3 version dl, lite, full
     
-on trigger 
+on trigger or procedure
     on match
     on create
     store procedure (reasoning) 
+    https://dzone.com/articles/neo4j-30-stored-procedures
+    https://dzone.com/articles/neo4j-dynamically-add-propertyset-dynamic-property
     
 neo4j loadcsv 
     MATCH(n:emp) DETACH DELETE n
