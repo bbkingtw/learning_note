@@ -1,3 +1,12 @@
+tinkerpop
+    https://tinkerpop.apache.org/providers.html
+
+plugin
+    https://dzone.com/articles/extending-neo4j
+    
+graphdb
+    https://speakerdeck.com/bkmontgomery/warming-up-to-graphs
+
 with spark
     https://dzone.com/articles/neo4j-with-scala-awesome-experience-with-spark
 
@@ -12,6 +21,7 @@ user defined procedure
 
 rdbms import （oracle)
     https://dzone.com/articles/data-migration-from-other-database-to-neo4j
+    https://dzone.com/articles/introducing-the-newest-rdbms-to-neo4j-etl-tool
 
 bacth import
     CSV files 
