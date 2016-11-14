@@ -3,3 +3,6 @@ docker method
     http://ceph.com/planet/bootstrap-your-ceph-cluster-in-docker/
     http://dockone.io/article/558
     https://libraries.io/github/ceph/ceph-docker
+    https://opensource.com/business/15/7/running-ceph-inside-docker
+    http://dockone.io/article/558
+    https://github.com/ceph/ceph-docker
