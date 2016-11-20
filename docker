@@ -1,5 +1,6 @@
 service discovery
     https://technologyconversations.com/2015/09/08/service-discovery-zookeeper-vs-etcd-vs-consul/
+    http://www.yannmoisan.com/docker.html （nginx-proxy)
 
 container orchestra
     https://www.oreilly.com/ideas/swarm-v-fleet-v-kubernetes-v-mesos   
