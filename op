@@ -1,11 +1,47 @@
-http://www.infoworld.com/article/2611503/application-development/what-are-graph-databases-good-for--here-s-a-killer-app.html
-http://blog.octo.com/en/graph-databases-an-overview/
-https://neo4j.com/news/relational-database-graph-database/
-https://neo4j.com/developer/graph-database/
-http://www.slideshare.net/ontotext/graphdb-fundamentals
-http://www.slideshare.net/infinitegraph/an-introduction-to-graph-databases
-http://www.slideshare.net/omartaskin/graphdb
-http://www.slideshare.net/gagana24/graph-db
-http://www.slideshare.net/maxdemarzi/graph-database-use-cases
-http://www.infoworld.com/article/2616126/application-development/10-things-never-to-do-with-a-relational-database.html
-https://www.linkedin.com/pulse/graph-databases-replace-rdbms-technologies-graham-pearson
+import (capacity, hadoop? fee )
+    https://docs.arangodb.com/2.8/HttpBulkImports/index.html
+    http://orientdb.com/docs/2.2/Import-from-JSON.html
+    http://orientdb.com/docs/2.2/Import-from-CSV-to-a-Graph.html
+    http://stackoverflow.com/questions/19006616/how-to-import-a-csv-file-into-titan-graph-database
+    http://blog.juganaru.eu/2016/06/28/google-cayley-graph-database-tutorial-family-tree/
+
+graphdb compare
+    http://www.infoworld.com/article/2611503/application-development/what-are-graph-databases-good-for--here-s-a-killer-app.html
+    http://blog.octo.com/en/graph-databases-an-overview/
+    https://neo4j.com/news/relational-database-graph-database/
+    https://neo4j.com/developer/graph-database/
+    http://www.slideshare.net/ontotext/graphdb-fundamentals
+    http://www.slideshare.net/infinitegraph/an-introduction-to-graph-databases
+    http://www.slideshare.net/omartaskin/graphdb
+    http://www.slideshare.net/gagana24/graph-db
+    http://www.slideshare.net/maxdemarzi/graph-database-use-cases
+    http://www.infoworld.com/article/2616126/application-development/10-things-never-to-do-with-a-relational-database.html
+    https://www.linkedin.com/pulse/graph-databases-replace-rdbms-technologies-graham-pearson
+
+http://www.ibm.com/developerworks/library/os-giraph/
+    Unlike Neo4j, MapReduce is not designed to support online query processing. MapReduce is optimized for analytics on large data volumes partitioned over hundreds of machines. Apache Hadoop, an open source distributed-processing framework for large data sets that includes a MapReduce implementation, is popular in industry and academia by virtue of its simplicity and scalability.
+    However, Hadoop and its associated technologies (such as Pig and Hive) were not designed mainly to support scalable processing of graph-structured data. Some proposals to adapt the MapReduce framework (or Hadoop) for this purpose were made and this article starts by looking at two of them. The most robust available technologies for large-scale graph processing are based on programming models other than MapReduce. The remainder of the article describes and compares two such systems in depth:
+    Giraph, a distributed and fault-tolerant system that adopts the Bulk Synchronous Parallel programming model to run parallel algorithms for processing large-scale graph data
+    GraphLab, a graph-based, high-performance, distributed computation framework that is written in C++
+    At the conclusion of the article, I also briefly describe some other open source projects for graph data processing. I assume that readers of this article are familiar with graph concepts and terminology. For any who might not be, I include a glossary of terms.
+    
+    Surfer and GBASE are examples of extensions for MapReduce that are proposed to help it process graphs more efficiently. 
+    (For a technical summary, see Surfer and GBASE. In Resources, find links to the full papers that propose these extensions.) 
+    These two proposals promise only limited success:    
+    
+    Apache Hama — like Giraph, designed to run on top of the Hadoop infrastructure 
+    
+    Signal/Collect, applies a similar Pregel programming model approach but independently of the Hadoop infrastructure.
+    
+    PEGASUS is a large-scale graph-mining library that is implemented on top of Hadoop.
+    
+https://www.facebook.com/notes/facebook-engineering/scaling-apache-giraph-to-a-trillion-edges/10151617006153920/
+    facebook engineering
+    
+http://d2rg.org
+    The D2RQ Platform is a system for accessing relational databases as virtual, read-only RDF graphs. It offers RDF-based access to the content of relational databases without having to replicate it into an RDF store. Using D2RQ you can:
+
+    query a non-RDF database using SPARQL
+    access the content of the database as Linked Data over the Web
+    create custom dumps of the database in RDF formats for loading into an RDF store
+    access information in a non-RDF database using the Apache Jena API
