@@ -5,6 +5,10 @@ import (capacity, hadoop? fee )
     http://stackoverflow.com/questions/19006616/how-to-import-a-csv-file-into-titan-graph-database
     http://blog.juganaru.eu/2016/06/28/google-cayley-graph-database-tutorial-family-tree/
 
+graphdb-rdbms compare
+    http://bitnine.net/rdbms-vs-graph-db/?ckattempt=1
+    http://ontotext.com/graph-databases-interconected-data-relational-databases/
+
 graphdb compare
     http://www.infoworld.com/article/2611503/application-development/what-are-graph-databases-good-for--here-s-a-killer-app.html
     http://blog.octo.com/en/graph-databases-an-overview/
