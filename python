@@ -11,3 +11,4 @@ to be web file server
 	http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python
 	http://www.tecmint.com/python-simplehttpserver-to-create-webserver-or-serve-files-instantly/
 	http://www.2ality.com/2014/06/simple-http-server.html
+	python -m SimpleHTTPServer
