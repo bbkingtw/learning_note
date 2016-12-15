@@ -5,7 +5,7 @@ notify
 install juypter
     http://www.techinfected.net/2016/05/install-and-run-juypter-ipython-notebook-ubuntu-linux.html
     http://jupyter.org/
-    https://ipython.org/
+    https://ipython.org/ 
     
 to be web file server       
 	http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python
