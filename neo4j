@@ -1,3 +1,22 @@
+The following Unix shell script demonstrates how to customize SimpleHTTPServer so that it serves files that have a given file name extension with a given media type. One case where that matters is Firefox being picky about the media type of the webapp.manifest.
+
+    #!/usr/bin/python
+    
+    import SimpleHTTPServer
+    import SocketServer
+    
+    PORT = 8000
+    
+    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+    Handler.extensions_map.update({
+        '.webapp': 'application/x-web-app-manifest+json',
+    });
+    
+    httpd = SocketServer.TCPServer(("", PORT), Handler)
+    
+    print "Serving at port", PORT
+    httpd.serve_forever()
+    
 performance tuning
     https://thinkingthread.com/12-steps-for-a-performant-graph-with-neo4j/
 
