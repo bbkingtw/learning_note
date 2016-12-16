@@ -59,6 +59,8 @@ stream
     http://www.sandersdenardi.com/readable-writable-transform-streams-node/
     writeable stream
         http://codewinds.com/blog/2013-08-19-nodejs-writable-streams.html
+    buffer
+        http://blog.fens.me/nodejs-buffer/
     
 framework
     http://feathersjs.com/
