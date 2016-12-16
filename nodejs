@@ -54,7 +54,11 @@ json client
     http://www.rolandfg.net/2014/07/29/json-commandline-processor/?utm_source=nodeweekly&utm_medium=email
 
 stream
-    http://tagtree.tv/intro-to-node-streams?utm_source=nodeweekly&utm_medium=email
+    http://tagtree.tv/intro-to-node-streams?utm_source=nodeweekly&utm_medium=email    
+    http://morning.work/page/2016-07/readable-stream-and-log-files-processing-in-nodejs.html
+    http://www.sandersdenardi.com/readable-writable-transform-streams-node/
+    writeable stream
+        http://codewinds.com/blog/2013-08-19-nodejs-writable-streams.html
     
 framework
     http://feathersjs.com/
@@ -88,9 +92,7 @@ csv<==>json
 express3=>4
     http://webapplog.com/migrating-express-js-3-x-to-4-x-middleware-route-and-other-changes/?utm_source=nodeweekly&utm_medium=email
 
-stream    
-    http://morning.work/page/2016-07/readable-stream-and-log-files-processing-in-nodejs.html
-    http://www.sandersdenardi.com/readable-writable-transform-streams-node/
+
     
     
 nodejs compiler
