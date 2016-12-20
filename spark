@@ -5,6 +5,10 @@ spark
     http://www.bogotobogo.com/Hadoop/BigData_hadoop_Apache_Spark_Programming_Model_RDD.php
     http://bryannotes.blogspot.tw/2014/12/spark-rdd-transformationsactions.htm
 
+scala syntax
+    http://www.openkb.info/2015/01/scala-on-spark-cheatsheet.html
+    https://www.tutorialspoint.com/scala/scala_operators.htm
+
 spark stream
     http://www.slideshare.net/Stratio/spark-streaming-berlin-apache-spark-meetup-march-2015
 
@@ -13,3 +17,8 @@ platform on it
 
 docker
     https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook
+
+rdd samples
+    http://hadoopspark.blogspot.tw/2015/09/9-rddresilient-distributed-dataset.html
+    http://www.voidcn.com/blog/gamer_gyt/article/p-6083297.html
+    http://stackoverflow.com/questions/25914789/how-do-i-iterate-rdds-in-apache-spark-scala
