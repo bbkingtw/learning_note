@@ -7,7 +7,10 @@ try
 spark
     http://www.bogotobogo.com/Hadoop/BigData_hadoop_Apache_Spark_Programming_Model_RDD.php
     http://bryannotes.blogspot.tw/2014/12/spark-rdd-transformationsactions.htm
-
+    
+sparkR
+    http://www.slideshare.net/felixcss/sparkr-zeppelin-52650031
+    
 scala syntax
     http://www.openkb.info/2015/01/scala-on-spark-cheatsheet.html
     https://www.tutorialspoint.com/scala/scala_operators.htm
