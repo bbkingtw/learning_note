@@ -1,32 +1,13 @@
-val whole_data = sc.parallelize(
-    List(
-        ("aa","a1\na2"),
-        ("bbbb","b1\n\nb2\nb3\nb4"),
-        ("ccc","c1\nc2\nc3")
-    )
-)
-
-def addInt( a:Int, b:Int ):Int  ={
-   var sum:Int = 0
-   sum = a + b
-
-   return sum
-}
-val y=addInt(3,4)   
-
-
-def ss(x:String, y:String):Array[org.apache.spark.sql.Row] ={
-    return y.split("\n").map(
-        p => Row(x, p)
-        //[1,2]
-    )
-}
-val cs=ss("1","2\n3")
-
-val schemaString = "server_name dt"
-val schema = StructType(
-    schemaString.split(" ").map(fieldName => StructField(fieldName, StringType, true))
-)
+sample1. flatten a array with different types
+  val in = Array( 1, Array(2,3), 4, Array(Array(5)) )
+  val out = Array(1,2,3,4,5)
     
-val df = sqlContext.createDataFrame(cs, schema)
-df.registerTempTable("log_all")
+  method1
+    in.flatMap{ case i: Int => Array(i); case ai: Array[Int] => ai }
+    
+  method2
+    def flatInt(in: Array[Any]): Array[Int] = in.flatMap{
+      case i: Int => Array(i)
+      case ai: Array[Int] => ai
+      case x: Array[_] => flatInt(x.toArray[Any])
+    }
