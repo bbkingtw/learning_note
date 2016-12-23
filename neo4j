@@ -55,6 +55,9 @@ rdbms import （oracle)
     https://dzone.com/articles/data-migration-from-other-database-to-neo4j
     https://dzone.com/articles/introducing-the-newest-rdbms-to-neo4j-etl-tool
 
+batch import with scripts
+    bin/neo4j-shell -path northwind.db -file import_csv.cypher.
+
 bacth import
     CSV files 
         are delimited by ;, use | as the array delimiter and use ' for quotes.
@@ -80,7 +83,10 @@ performance tuning
     
 sparql plugin
     http://www.snee.com/bobdc.blog/2014/01/storing-and-querying-rdf-in-ne.html
-
+	
+import data
+	http://www.slideshare.net/maxdemarzi/etl-into-neo4j
+	
 import csv
     https://neo4j.com/developer/guide-import-csv/
     
@@ -130,8 +136,11 @@ delete dups relations
     start r=relationship(*) 
     match s-[r]->e 
     with s,e,type(r) as typ, tail(collect(r)) as coll 
-    foreach(x in coll | delete x)
-
+    foreach(x in coll | delete x)
+	
+graphframe
+	http://www.slideshare.net/SparkSummit/finding-graph-isomorphisms-in-graphx-and-graphframes
+	
 delete dups nodes
     MATCH (n:Person),(m:Person)
     WHERE n <> m and n.id = m.id
