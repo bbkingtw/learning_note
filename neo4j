@@ -254,3 +254,14 @@ http://stackoverflow.com/questions/1754628/graph-database-in-java-other-than-neo
 
 graphdb compare
     http://db-engines.com/en/system/Cassandra%3bNeo4j%3bTitan
+
+fine tune
+	***** Neo4j 3.0 改到 sudo vi conf/neo4j-wrapper.conf *****   
+
+	# Java Heap Size: by default the Java heap size is dynamically 
+	# calculated based on available system resources. 
+	# Uncomment these lines to set specific initial and maximum 
+	# heap size in MB. 
+	dbms.memory.heap.initial_size=5120 
+	dbms.memory.heap.max_size=5120
+
