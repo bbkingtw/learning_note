@@ -23,7 +23,10 @@ platform on it
 
 docker
     https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook
-
+    
+data transfer
+    https://hackernoon.com/spark-packages-from-xml-to-json-ab6b5bb1f988#.khj6a82jd
+    
 rdd samples
     http://hadoopspark.blogspot.tw/2015/09/9-rddresilient-distributed-dataset.html
     http://www.voidcn.com/blog/gamer_gyt/article/p-6083297.html
