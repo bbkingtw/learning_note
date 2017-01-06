@@ -12,3 +12,6 @@ mesosphere tutorial
 
 TOWARDS DOCKER IN PRODUCTION WITH APACHE MESOS
     http://www.ivoverberk.nl/towards-docker-in-production-with-apache-mesos/
+
+docker
+    https://github.com/sekka1/mesosphere-docker
