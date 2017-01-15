@@ -93,6 +93,8 @@ nodejs
     docker attach cname                             --attach to a running container
     docker cp cname:/the_file_in_container host_dir --copy a container file to host 
     docker commit cname image_name                  --docker commit nodejs1111 new_image_name
+    docker port con_id con_port                     --check exosed local port for container's port
+    docker run -d -p 5000/tcp -p 53/udp flask       --expose tcp5000 and udp53 to outside (randome assignd)port
     docker rmi image_name
     
     docker save -o output.tar image_name            --save a image to be a file for later load usage 
