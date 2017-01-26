@@ -1,0 +1,7 @@
+method to share data between linux/windows
+  http://www.dreamflier.net/blog/user1/3/2274.html
+
+mount remote for local user
+  http://serverfault.com/questions/49070/how-to-setup-samba-share-to-be-mounted-as-specific-user
+  http://askubuntu.com/questions/72471/correct-way-of-mounting-a-windows-share
+  http://askubuntu.com/questions/313093/how-do-i-mount-a-cifs-share-via-fstab-and-give-full-rw-to-guest
