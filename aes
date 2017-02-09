@@ -1,0 +1,35 @@
+public static String encodeObject(Object obj,String keyStr){
+       try{
+	ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
+	String input = ow.writeValueAsString(obj); //轉為JSON字串
+	System.out.println("Object Json:"+input);
+	SecretKey secKey = new SecretKeySpec(Base64.decodeBase64(keyStr),"AES");
+
+	Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+	cipher.init(Cipher.ENCRYPT_MODE, secKey);
+	byte[] cipherText = cipher.doFinal(input.getBytes());
+	String encodeMsg = Base64.encodeBase64String(cipherText);
+	return encodeMsg;
+       } catch (Exception e) {
+	e.printStackTrace();
+	return null;
+        }
+}
+
+===docoding
+public static Object decodeObject(String objStr, String keyStr,Class inst){
+        try{
+	SecretKey secKey = new SecretKeySpec(Base64.decodeBase64(keyStr),"AES");
+
+	Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+	cipher.init(Cipher.DECRYPT_MODE, secKey);
+	byte[] cipherText = cipher.doFinal(Base64.decodeBase64(objStr));
+	String decodeMsg = new String(cipherText); //還原JSON字串
+
+	ObjectReader or = new ObjectMapper().reader(inst);
+	return or.readValue(decodeMsg);
+        } catch (Exception e) {
+	e.printStackTrace();
+	return null;
+        }
+}
