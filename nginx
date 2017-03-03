@@ -36,6 +36,21 @@ knowledge
 watch performance    
     http://www.cyberciti.biz/faq/nginx-see-active-connections-connections-per-seconds/    
 ======================================================================
+#limit special method
+server {
+  location / {
+    # This proxy_pass is used for requests that don't
+    # match the limit_except
+    proxy_pass http://127.0.0.1:8080;
+
+    # For requests that *aren't* a PUT, POST, or DELETE,
+    # pass to :9080
+    limit_except PUT POST DELETE {
+      proxy_pass http://127.0.0.1:9080;
+    }
+  }
+}
+
 # Automatically instal the latest nginx
 wget -O - http://nginx.org/keys/nginx_signing.key | sudo apt-key add -
 
