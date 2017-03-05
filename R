@@ -1,1 +1,5 @@
-https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image
+docker
+    https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image
+
+shiny
+    http://blog.infographics.tw/2016/04/interactive-r-with-shiny/
