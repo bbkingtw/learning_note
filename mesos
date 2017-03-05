@@ -15,3 +15,6 @@ TOWARDS DOCKER IN PRODUCTION WITH APACHE MESOS
 
 docker
     https://github.com/sekka1/mesosphere-docker
+    
+mesos
+    https://www.slideshare.net/mesosphere/scaling-like-twitter-with-apache-mesos
