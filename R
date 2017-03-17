@@ -3,3 +3,6 @@ docker
 
 shiny
     http://blog.infographics.tw/2016/04/interactive-r-with-shiny/
+
+d3
+    https://christophergandrud.github.io/networkD3/
