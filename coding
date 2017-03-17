@@ -11,6 +11,12 @@ how to make us a better coder
     CODE REFACTORING
     version controling
     give some time yourself
+    Use Descriptive Names to delcare variables
+    Readability > Cleverness
+    there would be a more better function library somewhere, if now, how about write one 
+    build platform, not build system, let system grow up on platform
+    build library instead of build function
+    build DataMart not build table, reduce SQL loading and prevent SQL complexity
     
 what's on the right track
 
