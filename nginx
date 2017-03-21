@@ -7,6 +7,7 @@ config.conf
     https://gist.github.com/denji/8359866
     https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
     https://www.nginx.com/resources/wiki/start/topics/examples/full/
+    http://seanlook.com/2015/05/17/nginx-location-rewrite/
   
 DDos protection
     config: http://takeshiyako.blogspot.tw/2015/11/mitigating-ddos-attacks-nginx-module.html
