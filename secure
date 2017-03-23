@@ -1,2 +1,5 @@
 A simple SSL/TLS proxy with mutual authentication for securing non-TLS services
     https://github.com/square/ghostunnel
+
+web tokens
+    https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
