@@ -8,6 +8,8 @@ config.conf
     https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
     https://www.nginx.com/resources/wiki/start/topics/examples/full/
     http://seanlook.com/2015/05/17/nginx-location-rewrite/
+    play some trick with elasticsearch samples
+        https://www.elastic.co/blog/playing-http-tricks-nginx
   
 DDos protection
     config: http://takeshiyako.blogspot.tw/2015/11/mitigating-ddos-attacks-nginx-module.html
