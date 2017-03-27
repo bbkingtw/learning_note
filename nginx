@@ -1,3 +1,6 @@
+log format
+    log_format upstreamlog '[$time_local] $remote_addr - $remote_user - $server_name  to: $upstream_addr: $request upstream_response_time $upstream_response_time msec $msec request_time $request_time';
+    
 install newest nginx under ubuntu 14.04
     https://gist.github.com/Globegitter/685e3739c0f181bda3ec#file-nginx-latest-sh-L32
     
