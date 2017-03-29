@@ -1,1 +1,8 @@
 https://coderwall.com/p/swgfvw/nginx-direct-file-upload-without-passing-them-through-backend
+http://www.shixinke.com/openresty/openresty-upload-file
+http://www.lai18.com/content/1160181.html?from=cancel
+http://www.qixing318.com/article/openresty-imagemagick-lua-implementation-watermarking-upload-photo-thumbnails.html
+https://openresty.org/cn/lua-resty-upload-library.html
+
+prevent same file store twice
+  http://blog.163.com/lhmwzy@126/blog/static/64215736201210209285365/
