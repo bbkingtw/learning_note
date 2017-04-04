@@ -3,8 +3,28 @@ module
         set_real_ip_from   192.168.1.0/24;     指定接收来自哪个前端发送的 IP head 可以是单个IP或者IP段
         set_real_ip_from   192.168.2.1;  
         real_ip_header     X-Real-IP;         IP head  的对应参数，默认即可。
+    mod_concat
+        模块由淘宝开发，目前已经包含在tengine中，并且淘宝已经在使用这个nginx模块。不过塔暂时没有包含在nginx中。这个模块类似于apache中的modconcat。如果需要使用它，需要使用两个"?"问号.
+        来个范例：
+        http://example.com/??style1.css,style2.css,foo/style3.css
+        以上将原先3个请求合并为1个请求
     http_sub_module
         replace response string
+    ngx_http_secure_link_module 
+        used to check authenticity of requested links, 
+        protect resources from unauthorized access, 
+        and limit link lifetime.        
+    http_slice_module (split large file)
+        location ^~ /video-dump/ {
+            slice; # enable slicing
+            slice_start_arg s;
+            slice_end_arg e;    
+        }
+        So we would request the first 1k of the file like this:
+
+        http://example.com/video-dump/large_vid.mp4?s=0&e=1024
+        Notice s=0, start at 0 and e=1024, stop at 1024 bytes (1k).        
+        
     ngx_http_dav_module
         for file management automation via the WebDAV protocol. 
         The module processes HTTP and WebDAV methods PUT, DELETE, MKCOL, COPY, and MOVE.
