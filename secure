@@ -3,3 +3,28 @@ A simple SSL/TLS proxy with mutual authentication for securing non-TLS services
 
 web tokens
     https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
+    
+nginx auth_request (200 to accet and 4xx to reject)
+  location = /auth {
+    internal;
+    proxy_pass http://127.0.0.1:8082;
+    proxy_pass_request_body     off;
+    proxy_set_header Content-Length "";
+    proxy_set_header X-Original-URI $request_uri;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+  }
+
+  location /secret {
+    auth_request /auth;
+  }
+  
+https://heipei.github.io/2015/09/23/nginx-sso-Simple-offline-SSO-for-nginx/
+  
+nodejs , auth_request sample
+  https://segmentfault.com/a/1190000005933091
+  https://github.com/e10101/AdminLogin
+  https://blog.simplypatrick.com/til/2016/2016-02-19-sso-with-auth_request/
+  
+completed example       
+    https://developers.shopware.com/blog/2015/03/02/sso-with-nginx-authrequest-module/
