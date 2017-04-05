@@ -6,3 +6,5 @@ https://openresty.org/cn/lua-resty-upload-library.html
 
 prevent same file store twice
   http://blog.163.com/lhmwzy@126/blog/static/64215736201210209285365/
+
+http://charlesleifer.com/blog/nginx-a-caching-thumbnailing-reverse-proxying-image-server-/
