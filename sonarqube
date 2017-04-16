@@ -1,8 +1,14 @@
+sample run sonarqube with postgres
+    http://blog.anorakgirl.co.uk/2015/11/super-quick-sonarpostgres-setup-with-docker/
+
 docker 
     https://hub.docker.com/_/sonarqube/
-    
+    docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+
 plsql
     https://github.com/felipebz/sonar-plsql
     https://www.salvis.com/blog/plsql-cop-for-sonarqube/
     http://docs.sonarqube.org/pages/viewpage.action?pageId=6389850
-    http://www.sonarsource.com/products/plugins/languages/plsql/
+    http://www.sonarsource.com/products/plugins/languages/plsql/    
+    https://libraries.io/github/felipebz/sonar-plsql
+    http://www.sonarplugins.com/plsqlcop
