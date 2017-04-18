@@ -20,3 +20,6 @@ httpperf
 
 webpage testing
     https://translate.google.com/translate?depth=1&hl=ru&ie=UTF8&prev=_t&rurl=translate.google.ru&sl=en&tl=zh-CN&u=https://devexpress.github.io/testcafe/documentation/getting-started/
+
+mocha testing
+    https://codeforgeek.com/2015/07/unit-testing-nodejs-application-using-mocha/
