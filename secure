@@ -3,6 +3,9 @@ A simple SSL/TLS proxy with mutual authentication for securing non-TLS services
     
 透過proxy把申請好的bearer送到twitter, 建構自己的nginx api endpoint
     http://blog.etianen.com/blog/2013/04/12/nginx-twitter-api-proxy/
+    
+good article
+    http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/
 
 web tokens
     https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
