@@ -3,3 +3,6 @@ skill
 
 string utility
   https://github.com/jprichardson/string.js
+  
+integrated debug
+  http://node.getglimpse.com/
