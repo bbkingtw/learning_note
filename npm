@@ -9,3 +9,6 @@ integrated debug
 
 parsing web content
   x-ray
+  
+pretty log (write code in the same line)
+  https://github.com/ivanseidel/node-draftlog?utm_source=nodeweekly&utm_medium=email
