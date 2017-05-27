@@ -13,6 +13,7 @@ good article
 
 web tokens
     https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
+    https://www.compose.com/articles/authenticating-node-red-with-jsonwebtoken/?utm_source=cooper&utm_medium=newsletter&utm_content=node
     
 nginx auth_request (200 to accet and 4xx to reject)
   location = /auth {
