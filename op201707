@@ -1,9 +1,30 @@
-window network limited (ngx port)
-window AD sucks
-window file server bad (wannacry)
-big data on linux
-rtd on linux
-6W per real machine
+windows
+    pros
+        everyone use that
+    cons
+        window network limited (ngx port)
+        window AD sucks
+            file server
+            telnet 
+            ftp
+            wireshark can show id/password information
+        window file server bad (wannacry)        
+        6w os fee for each server
+        lb use broadcast mode
+    
+linux 
+    pros
+        big data on linux
+        rtd on linux
+    cons
 
-did we ready
+    
+tools
+    currports
+    wireshark
+    network monitor
+    shc
+    
+suggestion
+    明碼傳輸 (ftp, telnet, tcp can we use sftp, ssh to replace?)
     
