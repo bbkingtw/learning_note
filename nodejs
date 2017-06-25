@@ -129,6 +129,7 @@ node-schedule
 node-gyp
     win8 need vs2010
     win7 need express msvc2010 + win7 sdk 64bit 
+    http://www.ctolib.com/topics-47543.html
 
 gridfs (storage)
     https://www.npmjs.com/package/gridfs-storage-engine
