@@ -5,6 +5,9 @@ ci
     https://strongloop.com/strongblog/roll-your-own-node-js-ci-server-with-jenkins-part-1/
     https://blog.couchbase.com/create-continuous-deployment-pipeline-nodejs-jenkins/
     
+upload_file
+    http://lollyrock.com/articles/express4-file-upload/
+    
 find best npm
     http://www.pincer.io/node/keywords/neo4j/best
     
