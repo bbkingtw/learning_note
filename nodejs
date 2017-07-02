@@ -1,6 +1,9 @@
 openauth
     https://segmentfault.com/a/1190000000385867
     
+n-api
+    http://www.cnblogs.com/chyingp/p/nodejs-learning-napi.html
+    
 ci
     https://strongloop.com/strongblog/roll-your-own-node-js-ci-server-with-jenkins-part-1/
     https://blog.couchbase.com/create-continuous-deployment-pipeline-nodejs-jenkins/
