@@ -1,3 +1,6 @@
+good
+    https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching
+    
 module
     http_realip_module (如果上層是電信業者proxy, 為了取得正確user段ip)
         set_real_ip_from   192.168.1.0/24;     指定接收来自哪个前端发送的 IP head 可以是单个IP或者IP段
