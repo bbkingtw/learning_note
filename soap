@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/38978691/soap-for-nodejs-without-using-wsdl
+https://www.codeproject.com/Articles/379389/Wcf-js-Call-WCF-web-services-from-Node-js
+https://stackoverflow.com/questions/8655252/node-js-how-to-consume-soap-xml-web-service/22897376#22897376
+
+real example
+  http://www.webservicex.net/stockquote.asmx?wsdl
+  https://www.reddit.com/r/node/comments/3es5e0/soap_in_node/
