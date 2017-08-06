@@ -14,6 +14,9 @@ modules
 nginx best secure config
     https://gist.github.com/plentz/6737338
     
+nodejs best security method
+    https://expressjs.com/en/advanced/best-practice-security.html
+
 good article
     http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/
 
