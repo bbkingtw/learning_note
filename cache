@@ -1,0 +1,23 @@
+cache result temp for once source decision is not make (white list)
+  https://www.nginx.com/blog/nginx-high-performance-caching/
+  
+can cache nginx-tcp?  
+
+cache
+  https://www.nginx.com/blog/nginx-high-performance-caching/
+  for used to response sql more efficient (10 second for preventng lots of query same sql) 
+  for used to response server request (1 minutes for upstream, better change to web service too)
+  for used to response from db result (cache for frequently query in very short time, ex:10 seconds)
+
+cache config
+  https://cdn-1.wp.nginx.com/wp-content/uploads/2016/08/Garrett-Content_Caching-8_NGINX-Config-10-05.jpg
+  
+cache used when source stale  
+  https://cdn-1.wp.nginx.com/wp-content/uploads/2016/08/Garrett-Content_Caching-9_Caching-Process-11-14.jpg
+  
+good concept  
+  https://cdn-1.wp.nginx.com/wp-content/uploads/2016/08/Garrett-Content_Caching-17_How-is-Cached-Content-Stored-23-53.jpg
+  
+  https://cdn.wp.nginx.com/wp-content/uploads/2016/08/Garrett-Content_Caching-22_Delayed-Caching-32-30.jpg
+  
+  
