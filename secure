@@ -11,6 +11,9 @@ modules
     https://github.com/bnoguchi/everyauth
     passport.js
     
+nginx best secure config
+    https://gist.github.com/plentz/6737338
+    
 good article
     http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/
 
