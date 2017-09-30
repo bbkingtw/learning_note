@@ -1,3 +1,7 @@
+jwt module (prevent client implement jwt judge effort itself)
+    https://github.com/auth0/nginx-jwt
+    * a depend kms to give auth token for later nginx use
+
 good
     http://wiki.jikexueyuan.com/project/node-lessons/structures-nodejs.html
     http://nodewebapps.com/2017/01/03/13-security-best-practices-for-your-web-application/?utm_source=nodeweekly&utm_medium=email
