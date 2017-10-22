@@ -1,0 +1,16 @@
+var deformat=require('deformat')
+var split=require('split')
+var fs=require('fs')
+var log=console.log
+var combined = '$remote_addr - $remote_user [$time_local] "$request $url HTTP/$http_version" $status $body_bytes_sent "$http_referer" "$http_user_agent * $a"'
+
+var i=1;
+var d=require('deformat')
+
+fs.createReadStream('access.log').pipe(split())
+  .on('data', function(line){
+    log('original',line);
+    var x=d(combined).exec(line)
+    log(x)
+    log('=============================')
+  });
