@@ -1,3 +1,6 @@
+domain to catch error
+    http://blog.fens.me/nodejs-core-domain/
+    
 jwt module (prevent client implement jwt judge effort itself)
     https://github.com/auth0/nginx-jwt
     * a depend kms to give auth token for later nginx use
