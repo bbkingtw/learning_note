@@ -1,0 +1,132 @@
+events {
+    worker_connections 1024;
+}
+
+Q:tcp timeout for preventing zombie
+Q:tcp issue query usage
+Q:tcp keep alive usage
+Q:
+
+#=====================================
+# checker before dispatch to db middle
+#=====================================
+https://www.slideshare.net/xqpmjh/openrestylua
+
+upstream x-app-checker {
+   server check1:12345;
+   server check2:12345;
+   server skip-check:12345 backup;
+}
+
+stream {
+    # define a server protecting before dispatching to database middle
+    server { 
+        listen 211;   
+   
+        local sock = ngx.socket.tcp()
+        sock:settimeout(1000) -- one second
+        local ok, err = sock:connect("active-ip", 11211)
+        local bytes, err = sock:send("QUERY AP-1.0\r\n")
+        if not bytes then
+          ngx.say("failed to send query: ", err)
+          ngx.say('DB-NGX-ENTRY')
+          record-fail-in-elk
+          return
+        end
+        
+        local line, err = sock:receive()
+        if not line then
+          ngx.say("failed to receive a line: ", err)
+          ngx.say('DB-NGX-ENTRY')
+          record-fail-in-elk
+          return
+        end
+        
+        ngx.say("result: ", line)
+        
+        local ok, err = sock:setkeepalive(60000, 500)
+        if not ok then
+          ngx.say("failed to put the connection into pool with pool capacity 500 "
+            .. "and maximal idle time 60 sec")
+          return
+        end
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        content_by_lua_block {                  
+          err1,ok1=ngx.tcp.capture('active')
+          if err1
+            err2,ok2=ngx.tcp.catpre(standby')
+            if err2          
+              ngx.say("myself-entry")
+            else
+              ngx.say(ok2)
+            end 
+          else
+            ngx.say(ok1)
+          end                     
+       }                    
+    }
+}
+
+#=============
+# db middle
+#=============
+
+upstream bypass-db {
+   server no-protect1:2222; fail_timeout=2s slow_start=10s;
+   server no-protect2:2222; fail_timeout=2s slow_start=10s;  
+}
+
+upstream secure-db {
+   server protect1:2222; fail_timeout=5s slow_start=10s;
+   server protect2:2222; fail_timeout=5s slow_start=10s;  
+}
+
+server {
+    listen 12346;     
+
+    local servers_ip = { "10.119.20","10.3.4" }
+
+    content_by_lua_block {                 
+       local ret
+       for _,ip in pairs(servers_ip) do
+         if string.find("10.119.120", ip) then
+           ret='server-ip'
+         end
+       end
+
+       if ret=='servier-ip' then
+         proxy_pass(bypass-db);
+       else  
+         proxy_pass(secure-db);
+       end      
+    }   
+}
+
+==========================
+db-transparent bypass
+==========================
+location / {
+      proxy_pass       http://192.168.57.109:80;
+      proxy_bind $remote_addr  transparent;  //upstream will see client ip instead of nginx ip
+}
+
+=========================
+service protection
+=========================
+https://www.slideshare.net/VictorWelling/nginx-lua-43850373 (p39)
+
+http {
+   server {
+     access_by_lua_file check.lua; #if problem occurs, remark this line
+   }
+}
