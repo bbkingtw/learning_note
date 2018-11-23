@@ -26,3 +26,6 @@ secure
 
 search
     http://my.oschina.net/wsyblog/blog/702841
+
+for analysis nginx
+   https://www.elastic.co/blog/machine-learning-for-nginx-logs
