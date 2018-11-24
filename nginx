@@ -197,3 +197,6 @@ exec $DAEMON
 
 must know
     https://lanjingling.github.io/2016/06/11/nginx-https-keepalived-youhua/
+
+log and its parsing
+    https://lanjingling.github.io/2016/03/14/nginx-access-log/
