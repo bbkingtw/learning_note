@@ -3,7 +3,9 @@ information
     
 swarm
     http://www.dockerinfo.net/3837.html
-    
+    how to use private repository and update all node in swarm
+        https://www.hotbak.net/key/%E4%BD%BF%E7%94%A8DockerSwarm%E6%90%AD%E5%BB%BA%E5%88%86%E5%B8%83%E5%BC%8F%E7%88%AC%E8%99%AB%E9%9B%86%E7%BE%A4V2EX.html
+
 self registry
     https://philipzheng.gitbooks.io/docker_practice/content/repository/local_repo.html
     
