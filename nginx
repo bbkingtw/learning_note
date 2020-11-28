@@ -200,3 +200,15 @@ must know
 
 log and its parsing
     https://lanjingling.github.io/2016/03/14/nginx-access-log/
+===============
+judge by body
+===============
+location / {        
+    rewrite_request_body;
+    
+    proxy_pass http://pool1;
+    
+    if ($request_body ~* 'test') {
+        proxy_pass http://pool2;
+    }
+}
