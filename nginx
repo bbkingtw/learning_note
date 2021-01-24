@@ -212,3 +212,28 @@ location / {
         proxy_pass http://pool2;
     }
 }
+
+=================
+by speecial info
+=================
+map $arg_clientinfo $has_clientinfo {    
+    default no_clientinfo;
+    ~^(?<xhost>[^|]+)\|(?<xapp>.*) correct_clientinfo;    
+    ~.* bad_clientinfo;
+}
+
+map $xapp $white_app {
+    default false;
+    app1.exe yes;
+    app2.exe app2;
+}
+
+server {   
+    listen 8888;
+    access_log /logs/a.log format_a;    
+
+    location / {
+        add_header Content-Type text/html;
+        return 200 'request_uri=$request_uri=> $arg_clientinfo $has_clientinfo $xhost $xapp ==> $white_app';      
+    }
+}
