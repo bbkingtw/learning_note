@@ -65,6 +65,8 @@ config.conf
     http://seanlook.com/2015/05/17/nginx-location-rewrite/
     play some trick with elasticsearch samples
         https://www.elastic.co/blog/playing-http-tricks-nginx
+    map to solve multiple condition
+        http://www.nightbluefruit.com/blog/2020/01/using-map-to-resolve-multiple-conditions-in-nginx/
   
 DDos protection
     config: http://takeshiyako.blogspot.tw/2015/11/mitigating-ddos-attacks-nginx-module.html
