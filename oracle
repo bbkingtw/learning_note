@@ -51,3 +51,132 @@ oracledb.getConnection(hisdb.connection, (err, con) => {
     }                                                                                                                                                        
   })                                                                                                                                                                                                                                                                                                                               
 })
+
+=================
+k.py
+=================
+from datetime import datetime
+
+import json
+import ujson
+
+from flask import Flask
+#from flask_restful import Api
+
+#from flask_restful import Resource
+import pandas as pd
+
+import cx_Oracle
+
+xuser='system'
+xpass='oracle'
+xconnection_string="localhost"
+
+dsn = cx_Oracle.makedsn('localhost', 1521)
+conn = cx_Oracle.connect(xuser, xpass, dsn,  encoding = "UTF-8")
+
+app = Flask(__name__)
+
+def start_pool():
+ 
+    # Generally a fixed-size pool is recommended, i.e. pool_min=pool_max.
+    # Here the pool contains 4 connections, which is fine for 4 concurrent
+    # users.
+    #
+    # The "get mode" is chosen so that if all connections are already in use, any
+    # subsequent acquire() will wait for one to become available.
+ 
+    pool_min = 1
+    pool_max = 1
+    pool_inc = 0
+    pool_gmd = cx_Oracle.SPOOL_ATTRVAL_WAIT
+ 
+    #print("Connecting to", os.environ.get("PYTHON_CONNECTSTRING"))
+ 
+    pool = cx_Oracle.SessionPool(user=xuser,
+                                 password=xpass,
+                                 dsn=xconnection_string,#os.environ.get("PYTHON_CONNECTSTRING"),
+                                 min=pool_min,
+                                 max=pool_max,
+                                 increment=pool_inc,
+                                 threaded=True,
+                                 getmode=pool_gmd,
+                                 encoding = "UTF-8"                               
+                                )
+      								#sessionCallback=init_session)
+ 
+    return pool
+
+pool = start_pool()
+
+@app.route('/hello/<string:qty>')
+def hello(qty):
+    return {
+        'message': 'Hello Wrold!'
+    }, 200
+
+#class sql(Resource):
+
+
+@app.route('/sql/<string:qty>')
+def sql_get(qty):
+	#print(conn)
+	cursor=conn.cursor()	
+	cursor.execute('select * from dm_wip_bt where qty>10000')#:qty',[qty])
+	rows = cursor.fetchall()
+	print(type (rows), rows)
+
+	jsonString = json.dumps(rows)
+	print(jsonString)
+	return jsonString
+
+@app.route('/csv/<string:qty>')
+def csv(qty):
+	d1 = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+
+	sql="select * from dm_wip_bt where rownum<="+qty			
+	connection = pool.acquire()
+	df = pd.read_sql(sql, connection)
+	d2 = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+
+	df.to_csv(r'python.csv', index = False)
+	d3 = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+	return 'done'+d1+','+d2+','+d3
+
+@app.route('/pandas/<string:qty>/<string:xtype>')
+def get(qty,xtype):
+	#print(conn)
+	#cursor=conn.cursor()
+	sql="select * from dm_wip_bt where qty>"+qty	
+
+	#pool = start_pool()
+	connection = pool.acquire()
+
+	df = pd.read_sql(sql, connection)
+	print(sql, df)
+
+	print('type', type(df))
+	#x=fast_json.dumps(df)
+	#return x
+
+	if xtype=='table':
+		x=df.to_html(header="true", table_id="table")
+		y='<header><meta charset="UTF-8"></header>\n'+x
+		return y
+	if xtype=='csv':	
+		x=df.to_csv(header="true")		
+		return '<pre>'+x+'</pre>'
+	if xtype=='json':		
+		result = df.to_json(orient="split")
+		return result
+		parsed = json.loads(result)
+		y=json.dumps(parsed, indent=4)  
+		return y	
+
+# api = Api(app)
+
+# api.add_resource(hello, "/hello/")
+# api.add_resource(sql, "/sql/")
+
+if __name__ == "__main__":
+    app.run()
