@@ -6,3 +6,33 @@ charset
 
 npmjs
     https://blogs.oracle.com/opal/entry/node_oracledb_1_8_has
+
+//------------------
+// oracle encode...
+//------------------
+const iconv = require('iconv-lite')
+const oracledb = require('oracledb')
+
+oracledb.fetchAsBuffer = [oracledb.BLOB]
+
+oracledb.getConnection(hisdb.connection, (err, con) => {
+  if (err) {
+    throw err
+  }
+  const sql = 'xxxx'
+  con.execute(sql, (err, result) => {
+    if (err) {
+      throw err
+    }
+    console.log(result.rows)
+    
+    for (const item of result.rows) { 
+      for (const data of item) {
+        if (Buffer.isBuffer(data)) {
+          const str = iconv.decode(data, 'utf-16le') // decode buffer to string
+          console.log(str)
+        }
+      }                                                                                                                                         
+    }                                                                                                                                                        
+  })                                                                                                                                                                                                                                                                                                                               
+})
