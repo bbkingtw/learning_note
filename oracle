@@ -7,6 +7,21 @@ charset
 npmjs
     https://blogs.oracle.com/opal/entry/node_oracledb_1_8_has
 
+//oracleDB
+if (process.platform === 'win32') { // Windows
+  oracledb.initOracleClient({ libDir: 'C:\\oracle\\instantclient_19_11' });
+} else if (process.platform === 'darwin') { // macOS
+  oracledb.initOracleClient({ libDir: process.env.HOME + '/Downloads/instantclient_19_8' });
+}
+
+//------------------
+// oracle convert
+//------------------
+SELECT
+  CONVERT( 'Ä Ê Í', 'US7ASCII', 'WE8ISO8859P1' )
+FROM
+  DUAL;
+  
 //------------------
 // oracle encode...
 //------------------
