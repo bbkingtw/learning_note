@@ -18,3 +18,11 @@ tutorial
     https://www.nctusam.com/2017/07/26/centos-安裝kubernetes-kubernetes-install-in-centos-7/
     windows iis
         https://docs.microsoft.com/zh-tw/azure/container-service/kubernetes/container-service-kubernetes-windows-walkthrough
+
+minikube start --driver=docker
+
+#{asp.net}
+    1.https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/README.md
+
+vm docker difference
+    https://image.slidesharecdn.com/minikubeworkshophandout-180426122014/95/minikube-workshop-handout-9-1024.jpg?cb=1524745252
