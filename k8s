@@ -26,3 +26,6 @@ minikube start --driver=docker
 
 vm docker difference
     https://image.slidesharecdn.com/minikubeworkshophandout-180426122014/95/minikube-workshop-handout-9-1024.jpg?cb=1524745252
+
+proxmox
+    http://www.gienginali.idv.tw/modules/tad_book3/html_all.php?tbsn=19
