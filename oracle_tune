@@ -1,2 +1,13 @@
 partition 
-  https://www.twblogs.net/a/5d4899d7bd9eee541c303d18
+    https://www.twblogs.net/a/5d4899d7bd9eee541c303d18
+ptf  
+    https://www.doag.org/formes/pubfiles/11270472/2019-SQL-Andrej_Pashchenko-Polymorphic_Table_Functions_in_18c_Einfuehrung_und_Beispiele-Praesentation.pdf
+max(date||','||status) <===Z  to split
+    https://livesql.oracle.com/apex/livesql/file/content_F99JG73Z169WENDTTQFDQ0J09.html
+        select csv_to_field(Z, 'date,status') from (select Z from ...)
+            data status
+            01/01 ok
+            02/01 ng
+ptf overview      
+    https://www.doag.org/formes/pubfiles/10833549/2018-DB-Keith_Laker-Patterns_and_Use_Cases_For_Polymorphic_Tables-Praesentation.pdf
+    
