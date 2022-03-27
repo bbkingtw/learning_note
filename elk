@@ -34,3 +34,5 @@ md5
    To apply to pre-existing data, I think the easiest approach might be reindex using an ingest pipeline 5 using a 
    pipeline that includes a script processor 4 to produce a new field using a script like ctx.my_field_sha = ctx.my_field.sha256() 
    (according to this PR 8 that .sha256 method should be available).
+   
+   https://gist.github.com/gingerwizard/ed7e0ee8ab271c1dbb203532d4813d9a
